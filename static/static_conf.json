@@ -1,0 +1,9 @@
+{
+  "name": "computer-science-docs",
+  "deps": {
+    "history": "4",
+    "react": "7",
+    "react-dom": "7",
+    "react-router-dom": "5"
+  }
+}
