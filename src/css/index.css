@@ -1,0 +1,176 @@
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #4d4d4d;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #B87E60;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #606EB8;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #7AA293;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #B8606E;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #684366;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-function,
+.hljs-class .hljs-title {
+  color: #AA60B8;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #B8606E;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #7AA293;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #B8606E;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #606EB8;
+}
+
+.hljs-meta {
+  color: #B87E60;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #AA60B8;
+}
+
+.hljs-addition {
+  background: #7E60B8;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+a {
+  color: #7E60B8 !important;
+}
+
+body {
+  background-color: #ffffff;
+  color: #4d4d4d;
+  font-family: "Avenir Next W02", Helvetica, Arial, sans-serif;
+}
+
+.logo {
+  height: 70px;
+  margin: 10px 0px 0px 25px;
+  width: 60px;
+}
+
+#page-content h1 {
+  border-bottom-color: #ebebeb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #7E60B8;
+  font-family: Arial Narrow;
+  width: auto;
+}
+#page-content h2 {
+  color: #B8606E;
+}
+#page-content h3 {
+  color: #B8606E;
+}
+#page-content li {
+  line-height: 1.5;
+}
+#page-content p {
+  line-height: 1.5;
+}
+#page-content p code {
+  color: #B87E60;
+  padding: 0px 5px 0px 5px;
+}
+#page-content pre {
+  background-color: #ebebeb;
+  padding: 15px;
+}
+#page-content code {
+  font-family: "Source Code Pro", Consolas, Monaco, Courier New, monospace;
+  font-size: 11pt;
+  font-weight: 500;
+}
+#page-content summary:focus {
+  outline-width: 0px;
+}
+#page-content .img-and-text {
+  display: flex;
+  line-height: 1.7;
+}
+#page-content .img-and-text img {
+  box-shadow: 2px 2px 5px #ebebeb;
+  margin-right: 10px;
+  width: 300px;
+}
+#page-content .profile-img {
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px grey;
+  width: 150px;
+}
+#page-content .profile-text {
+  background-color: #FAEBFC;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px #ebebeb;
+  color: #606EB8;
+  margin: -140px 0px 60px 170px;
+  padding: 15px;
+  width: fit-content;
+}
+#page-content .profile-text-author {
+  color: grey;
+  font-size: 10pt;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

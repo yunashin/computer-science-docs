@@ -2,8 +2,8 @@ import React from "react";
 import { render } from "react-dom";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
+
 import Routes from "./Routes";
-import HomePage from "./components/HomePage";
 import Application from "./components/Application";
 
 export default class App {

@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-export default class HomePage extends React.Component {
-  // Run locally: npm start
-  render() {
-    return <div>Hello World</div>;
-  }
-}
+import Header from "./Header";
+import Page from "./Page";
+import SidebarMenu from "./sidebar/SidebarMenu";
+import { SidebarContent } from "./constants/SidebarContent";
+
+const HomePage = () => {
+  const pathname = window.location.pathname;
+  const pageIndex = SidebarContent.indexOf(
+    SidebarContent.find((page) => page.path === pathname)
+  );
+  const [currentPageIndex, selectPage] = useState(pageIndex);
+  const [currentPage, updatePage] = useState(SidebarContent[currentPageIndex]);
+
+  useEffect(() => {
+    updatePage(SidebarContent[currentPageIndex]);
+  }, [currentPageIndex]);
+
+  return (
+    <div>
+      <Header />
+      <SidebarMenu
+        currentPageIndex={currentPageIndex}
+        selectPage={selectPage}
+      />
+      <Page page={currentPage} />
+    </div>
+  );
+};
+
+export default HomePage;

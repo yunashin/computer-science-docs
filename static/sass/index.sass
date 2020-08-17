@@ -1,0 +1,79 @@
+@import "constants.sass"
+@import "highlight.sass"
+
+a
+  color: $INDIGO !important
+
+body
+  background-color: #ffffff
+  color: $BASE_FONT_COLOR
+  font-family: "Avenir Next W02", Helvetica, Arial, sans-serif
+
+.logo
+  height: 70px
+  margin: 10px 0px 0px 25px
+  width: 60px
+
+#page-content
+  h1
+    border-bottom-color: $LIGHT_GREY
+    border-bottom-style: solid
+    border-bottom-width: 1px
+    color: $INDIGO
+    font-family: Arial Narrow
+    width: auto
+
+  h2
+    color: $MAUVE
+
+  h3
+    color: $MAUVE
+
+  li
+    line-height: 1.5
+
+  p
+    line-height: 1.5
+    code
+      color: $WOOD
+      padding: 0px 5px 0px 5px
+
+  pre
+    background-color: $LIGHT_GREY
+    padding: 15px
+
+  code
+    font-family: "Source Code Pro", Consolas, Monaco, Courier New, monospace
+    font-size: 11pt
+    font-weight: 500
+
+  summary:focus
+    outline-width: 0px
+
+  .img-and-text
+    display: flex
+    line-height: 1.7
+    img
+      box-shadow: 2px 2px 5px $LIGHT_GREY
+      margin-right: 10px
+      width: 300px
+
+  .profile-img
+    border-radius: 50%
+    box-shadow: 3px 3px 5px grey
+    width: 150px
+
+  .profile-text
+    background-color: $LIGHT_PINK
+    border-radius: 15px
+    box-shadow: 2px 2px 5px $LIGHT_GREY
+    color: $DENIM
+    margin: -140px 0px 60px 170px
+    padding: 15px
+    width: fit-content
+
+  .profile-text-author
+    color: grey
+    font-size: 10pt
+    font-style: italic
+    margin-top: 10px

@@ -1,6 +1,15 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
 module.exports = {
+  entry: "./src/index.js",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
+  },
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
@@ -18,7 +27,14 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/i,
+        use: ["css-loader"],
+      },
     ],
+  },
+  resolve: {
+    extensions: [".json", ".jsx", ".js", ".md"],
   },
   plugins: [
     new HtmlWebPackPlugin({
