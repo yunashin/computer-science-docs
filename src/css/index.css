@@ -137,7 +137,6 @@ body {
 }
 #page-content code {
   font-family: "Source Code Pro", Consolas, Monaco, Courier New, monospace;
-  font-size: 11pt;
   font-weight: 500;
 }
 #page-content summary:focus {

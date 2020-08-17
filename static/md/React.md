@@ -6,11 +6,104 @@ React is a JavaScript framework for building apps with HTML and CSS.
 
 Here's a simple tutorial on how to build your own React app and serve it on a public website!
 
-## Step 1: Create a GitHub Repository
+## Step 1: Create and Clone a GitHub Repository
+
+### Creating Your Repository
 
 If you don't have a GitHub account, **[make one](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)**! It's free! 🤑
 
 If you do, let's get started by **[creating a new repository](https://github.com/new)**! Make sure to click the checkbox that says **"Initialize this repository with a README"**.
+
+### Cloning Your Repository
+
+At the home page of your GitHub project, click the green **"Code"** dropdown button, which should open up a tooltip entitled **"Clone with HTTPS"**.
+
+Click the button next to the URL to copy it to your clipboard and then in the root path of your project, run:
+
+```bash
+git clone <paste-project-url-here>
+```
+
+## Step 2: Install Node.js and npm
+
+**Node.js** is a run-time environment which helps render your JavaScript program's contents on a server before delivering it to a web browser.
+
+**npm** (Node Package Manager) is an app and library that helps you manage your packages with simple terminal commands.
+
+npm is installed with Node.js, meaning that **you need Node.js installed before installing npm**.
+
+To check if you have Node or npm installed, you can run the following commands respectively:
+
+```bash
+node -v
+npm -v
+```
+
+If installed, each command will return the version number that's installed (i.e. `v0.10.31`).
+
+**Download Node.js**: Click the download link at **[Node.js](https://nodejs.org/en/)**
+
+**Download npm**: In the root path of your project, run `npm install`
+
+## Step 3: Set Up `webpack.config.js`
+
+Copy and paste the following code into a new file in the root path of your project:
+
+<details> <summary> webpack.config.js </summary>
+
+```js
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require("path");
+
+module.exports = {
+  /* where your app's logic starts */
+  entry: "./src/index.js",
+  /* related to how webpack emits results */
+  output: {
+    /* target directory for all output files */
+    path: path.resolve(__dirname, "dist"),
+    /* the URL that all paths start at (needed to access Routes.js!) */
+    publicPath: "/",
+  },
+  devServer: {
+    historyApiFallback: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+        },
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader",
+          },
+        ],
+      },
+      {
+        test: /\.css$/i,
+        use: ["css-loader"],
+      },
+    ],
+  },
+  resolve: {
+    extensions: [".json", ".jsx", ".js"],
+  },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: "./src/index.html",
+      filename: "./index.html",
+    }),
+  ],
+};
+```
+
+</details>
 
 ## 💡 Pro Tip: Styling Code Snippets with Highlight.js
 
