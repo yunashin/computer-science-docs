@@ -105,6 +105,24 @@ module.exports = {
 
 </details>
 
+## Convert Markdown to HTML with Showdown
+
+Install [Showdown](https://github.com/showdownjs/showdown) by running the following in the root path of your project:
+
+```bash
+npm install showdown
+```
+
+Then, you can use `showdown` to convert a Markdown file into HTML:
+
+```jsx
+import showdown from "showdown";
+
+const converter = new showdown.Converter();
+const text = "# hello, markdown!";
+const html = converter.makeHtml(text);
+```
+
 ## 💡 Pro Tip: Styling Code Snippets with Highlight.js
 
 If you want to include _beautiful_ code snippets in your website, you can style your Markdown ͢ HTML file code snippets with Highlight's quick and easy syntax highlighting!
