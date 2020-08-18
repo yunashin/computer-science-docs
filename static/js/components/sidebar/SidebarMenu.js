@@ -16,7 +16,7 @@ const List = styled.ul`
   padding-inline-start: 20px;
 `;
 
-const SidebarMenu = ({ currentPageIndex, selectPage }) => {
+const SidebarMenu = ({ currentPageIndex, selectPageIndex }) => {
   return (
     <SidebarContainer>
       <List>
@@ -25,7 +25,7 @@ const SidebarMenu = ({ currentPageIndex, selectPage }) => {
             key={page.title}
             page={page}
             currentPageIndex={currentPageIndex}
-            selectPage={selectPage}
+            selectPageIndex={selectPageIndex}
           />
         ))}
       </List>

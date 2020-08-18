@@ -12,6 +12,7 @@ export default function Routes() {
   return (
     <Switch>
       <Route path="/" exact={true} component={HomePage} />
+      <Route path="/sandbox" exact={true} component={HomePage} />
       {PageRoutes}
     </Switch>
   );

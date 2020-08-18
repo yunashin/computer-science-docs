@@ -1,32 +1,49 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import { withRouter } from "react-router";
 
 import Header from "./Header";
-import Page from "./Page";
+import ContentPage from "./ContentPage";
 import SidebarMenu from "./sidebar/SidebarMenu";
-import { SidebarContent } from "./constants/SidebarContent";
+import SandboxPage from "./SandboxPage";
+import {
+  getCurrentContentPage,
+  getCurrentPageIndex,
+  getIsSandboxPage,
+} from "../utils/routingUtils";
 
-const HomePage = () => {
-  const pathname = window.location.pathname;
-  const pageIndex = SidebarContent.indexOf(
-    SidebarContent.find((page) => page.path === pathname)
+const HomePage = ({ location }) => {
+  const pathname = location.pathname;
+  const [currentPage, updateCurrentPage] = useState(
+    getCurrentContentPage(pathname)
   );
-  const [currentPageIndex, selectPage] = useState(pageIndex);
-  const [currentPage, updatePage] = useState(SidebarContent[currentPageIndex]);
+  const [currentPageIndex, selectPageIndex] = useState(
+    getCurrentPageIndex(currentPage)
+  );
+  const isSandboxPage = getIsSandboxPage(pathname);
 
   useEffect(() => {
-    updatePage(SidebarContent[currentPageIndex]);
-  }, [currentPageIndex]);
+    if (!isSandboxPage) {
+      updateCurrentPage(getCurrentContentPage(pathname));
+    }
+  }, [isSandboxPage, pathname]);
+
+  const renderPage = useCallback(() => {
+    if (isSandboxPage) {
+      return <SandboxPage />;
+    }
+    return <ContentPage />;
+  }, [isSandboxPage]);
 
   return (
     <div>
       <Header />
       <SidebarMenu
         currentPageIndex={currentPageIndex}
-        selectPage={selectPage}
+        selectPageIndex={selectPageIndex}
       />
-      <Page page={currentPage} />
+      {renderPage()}
     </div>
   );
 };
 
-export default HomePage;
+export default withRouter(HomePage);

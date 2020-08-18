@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { withRouter } from "react-router";
 import styled from "styled-components";
 
 import {
@@ -27,8 +27,12 @@ const getBackgroundColor = (isSelected, isHoveredOver) => {
   return BASE_BACKGROUND_COLOR;
 };
 
-const SidebarListItem = ({ page, currentPageIndex, selectPage }) => {
-  const history = useHistory();
+const SidebarListItem = ({
+  currentPageIndex,
+  history,
+  page,
+  selectPageIndex,
+}) => {
   const [isHoveredOver, setIsHovering] = useState(false);
   const index = SidebarContent.indexOf(page);
   const isSelected = currentPageIndex === index;
@@ -36,7 +40,7 @@ const SidebarListItem = ({ page, currentPageIndex, selectPage }) => {
   const ListItem = Item(backgroundColor, isSelected);
 
   const handleClick = () => {
-    selectPage(index);
+    selectPageIndex(index);
     history.push(page.path);
   };
 
@@ -51,4 +55,4 @@ const SidebarListItem = ({ page, currentPageIndex, selectPage }) => {
   );
 };
 
-export default SidebarListItem;
+export default withRouter(SidebarListItem);

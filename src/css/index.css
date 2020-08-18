@@ -107,6 +107,23 @@ body {
   font-family: "Avenir Next W02", Helvetica, Arial, sans-serif;
 }
 
+code {
+  color: #B87E60;
+  font-family: "Source Code Pro", Consolas, Monaco, Courier New, monospace;
+}
+
+span code {
+  color: inherit;
+}
+
+.align-end {
+  text-align: end;
+}
+
+.align-start {
+  text-align: start;
+}
+
 .center {
   text-align: center;
 }
@@ -123,22 +140,21 @@ body {
   font-family: Arial Narrow;
   width: auto;
 }
+#page-content h1 code, #page-content h2 code, #page-content h3 code, #page-content h4 code {
+  color: #4d4d4d;
+}
 #page-content li {
   line-height: 1.5;
 }
 #page-content p {
   line-height: 1.5;
 }
-#page-content p code {
-  color: #B87E60;
-}
 #page-content pre {
   background-color: #e3e3e3;
   padding: 15px;
 }
-#page-content code {
-  font-family: "Source Code Pro", Consolas, Monaco, Courier New, monospace;
-  font-weight: 500;
+#page-content pre code {
+  color: #4d4d4d;
 }
 #page-content summary {
   font-style: italic;
@@ -156,6 +172,20 @@ body {
   border: 1px solid #828282;
   padding: 15px;
 }
+#page-content .color-div {
+  color: #3e9676;
+}
+#page-content .color-span {
+  color: #5063c6;
+}
+#page-content .focused-div {
+  border: 2px solid #3e9676;
+  box-shadow: 2px 2px 5px grey;
+}
+#page-content .focused-span {
+  border: 2px solid #5063c6;
+  box-shadow: 2px 2px 5px grey;
+}
 #page-content .img-and-text {
   display: flex;
   line-height: 1.7;
@@ -167,6 +197,7 @@ body {
 }
 #page-content .output-container {
   border: 1px solid #828282;
+  margin: 15px 0px 15px 0px;
   padding: 15px;
 }
 #page-content .profile-img {

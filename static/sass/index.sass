@@ -11,6 +11,20 @@ body
   color: $BASE_FONT_COLOR
   font-family: "Avenir Next W02", Helvetica, Arial, sans-serif
 
+code
+  color: $WOOD
+  font-family: "Source Code Pro", Consolas, Monaco, Courier New, monospace
+
+span
+  code
+    color: inherit
+
+.align-end
+  text-align: end
+
+.align-start
+  text-align: start
+
 .center
   text-align: center
 
@@ -26,21 +40,21 @@ body
     font-family: Arial Narrow
     width: auto
 
+  h1, h2, h3, h4
+    code
+      color: $BASE_FONT_COLOR
+
   li
     line-height: 1.5
 
   p
     line-height: 1.5
-    code
-      color: $WOOD
 
   pre
     background-color: $LIGHT_GREY
     padding: 15px
-
-  code
-    font-family: "Source Code Pro", Consolas, Monaco, Courier New, monospace
-    font-weight: 500
+    code
+      color: $BASE_FONT_COLOR
 
   summary
     font-style: italic
@@ -58,6 +72,20 @@ body
     border: 1px solid $DARK_GREY
     padding: 15px
 
+  .color-div
+    color: $TEAL
+
+  .color-span
+    color: $BLUE
+
+  .focused-div
+    border: 2px solid $TEAL
+    box-shadow: 2px 2px 5px grey
+
+  .focused-span
+    border: 2px solid $BLUE
+    box-shadow: 2px 2px 5px grey
+
   .img-and-text
     display: flex
     line-height: 1.7
@@ -68,6 +96,7 @@ body
 
   .output-container
     border: 1px solid $DARK_GREY
+    margin: 15px 0px 15px 0px
     padding: 15px
 
   .profile-img

@@ -30,8 +30,8 @@ To import another style sheet into your CSS file, use `@import`:
 
 ```css
 /* Relative path */
-@import "colors.css";
-@import url("colors.css");
+@import "../css/colors.css";
+@import url("../css/colors.css");
 
 /* Absolute path */
 @import url("http://cdnjs.com/libraries/highlight.js/");
@@ -39,46 +39,9 @@ To import another style sheet into your CSS file, use `@import`:
 
 [🔗 W3Schools](https://www.w3schools.com/cssref/pr_import_rule.asp)
 
-## Aligning Elements in a Layout
+### `display`
 
-### Aligning Horizontally
-
-To **center** an item **horizontally** (i.e. same spacing on the left and right), you can style the element wrapping it with `text-align: center`:
-
-```css
-/* CSS file */
-
-.center {
-  text-align: center;
-}
-```
-
-```html
-<!-- HTML file -->
-
-<div style="text-align: center">I've been `text-align: center`ed</div>
-```
-
-**Output:**
-
-<div class="output-container">
-  <div style="text-align: center">I've been `text-align: center`ed</div>
-</div>
-
-[🔗 W3Schools](https://www.w3schools.com/css/css_align.asp)
-
-### CSS Properties Used to Align
-
-#### `display`
-
-- **Block-Level Elements** always start on a **new line** and take up the **full width** available like a long `block`.
-- **Inline Elements** stay `inline` with their previous elements and only **take up as much width needed to fit its content**.
-
-<div style="border: 2px solid #7AA293; box-shadow: 2px 2px 5px grey;">This is a <b>Block-Level Element</b>.</div>
-
-And this is an <span style="border: 2px solid #7AA293; box-shadow: 2px 2px 5px grey;"><b>Inline Element</b></span>.
-
-<details> <summary> Block-Level & Inline Element Examples </summary>
+<details> <summary> Default Block-Level/Inline Element Examples </summary>
 
 | Block-Level Elements                                                                               | Inline Elements                  |
 | -------------------------------------------------------------------------------------------------- | -------------------------------- |
@@ -86,15 +49,124 @@ And this is an <span style="border: 2px solid #7AA293; box-shadow: 2px 2px 5px g
 
 </details>
 
+#### `display: block`: <span class="color-div">Block-Level Elements</span>
+
+Wrap elements in <span class="color-div">**`<div>` (denoted in green)**</span> to put them in their own `block`.
+
+```html
+<div>This is a <b>Block-Level Element</b>.</div>
+```
+
+**Output:** Starts on a **new line** and takes up **full width**
+
+<div class="output-container">
+  <div class="focused-div">
+    This is a <b>Block-Level Element</b>.
+  </div>
+</div>
+
+#### `display: inline`: <span class="color-span">Inline Elements</span>
+
+Wrap elements in <span class="color-span">**`<span>` (denoted in blue)**</span> to display them `inline`.
+
+<!-- prettier-ignore -->
+```html
+And this is an <span><b>Inline Element</b></span>.
+```
+
+**Output:** Stays **inline** with adjacent elements only **takes up as much width needed to fit**
+
+<div class="output-container">
+  And this is an <span class="focused-span"><b>Inline Element</b></span>.
+</div>
+
 **`display` Property Values**
 
-| Value    | Description               | Example                                                           |
-| -------- | ------------------------- | ----------------------------------------------------------------- |
-| `none`   | Displays nothing          | To show/hide elements, `<script>` uses `display: none` by default |
-| `inline` | Makes element inline      | To make horizontal menus with inline `<li>` elements              |
-| `block`  | Makes element block-level | To display `<a>` elements as block elements                       |
+| Value    | Description                  | Example                                                           |
+| -------- | ---------------------------- | ----------------------------------------------------------------- |
+| `none`   | Displays nothing             | To show/hide elements, `<script>` uses `display: none` by default |
+| `inline` | Makes element inline         | To make horizontal menus with inline `<li>` elements              |
+| `block`  | Makes element block-level    | To display `<a>` elements as block elements                       |
+| `flex`   | Displays **children** inline | To align elements horizontally for a header                       |
+
+**`display: flex`: Making Children Inline Horizontally`**
+
+```html
+<div display="flex">
+  <a href="./">Website Title</a>
+  <a href="./">About Us</a>
+  <a href="./">Blog</a>
+  <a href="./">Contact Us</a>
+</div>
+```
+
+**Output:**
+
+<div class="output-container">
+  <div display="flex">
+    <a href="./">Website Title</a>
+    <a href="./">About Us</a>
+    <a href="./">Blog</a>
+    <a href="./">Contact Us</a>
+  </div>
+</div>
 
 [🔗 W3Schools](https://www.w3schools.com/css/css_display_visibility.asp)
+
+## Aligning and Positioning Elements on a Page
+
+[🔗 W3Schools](https://www.w3schools.com/css/css_align.asp)
+
+#### `text-align`: Aligning Horizontally (Left ↔ Right)
+
+```html
+<div style="text-align: center">text-align: <b>center</b></div>
+```
+
+<div class="output-container">
+  <div class="center focused-div">text-align: <b>center</b></div>
+</div>
+
+<div class="output-container">
+  <div class="align-start focused-div">text-align: <b>start</b></div>
+</div>
+
+<div class="output-container">
+  <div class="align-end focused-div">text-align: <b>end</b></div>
+</div>
+
+### `position`
+
+```html
+<div style="position: static">position: <b>static</b></div>
+```
+
+#### `position: static`: Restore default positioning
+
+`position: static` elements are not affected by `top`, `right`, `bottom`, or `left` properties and basically restore defaults.
+
+<div class="output-container">
+  <div class="focused-div" style="position: static">position: <b>static</b></div>
+</div>
+
+#### `position: relative`
+
+`position: relative` elements are positioned according to their defaults, relative to their adjacent elements.
+
+<div class="output-container">
+  <span class="focused-span" style="left: 20px">left: <b>20px</b></span>
+  <span class="focused-span" style="position: relative">position: <b>relative</b></span>
+</div>
+
+#### `position: fixed`
+
+`position: fixed` elements are positioned relative to the viewport, meaning they'll always stay in the same place even when scrolling.
+
+#### `position: absolute`
+
+#### `position: sticky`
+
+[🔗 W3Schools](https://www.w3schools.com/css/css_positioning.asp)
 
 ## Margins
 
@@ -221,3 +293,7 @@ td {
 </div>
 
 [🔗 W3Schools](https://www.w3schools.com/css/css_table.asp)
+
+<div class="output-container">
+  <div class="focused-div" style="position: fixed">position: <b>fixed</b></div>
+</div>

@@ -2,6 +2,79 @@
 
 React is a JavaScript framework for building apps with HTML and CSS.
 
+## React-Router
+
+[🔗 React-Router Documentation](https://reactrouter.com/web/api/history)
+
+### Ways to Redirect
+
+#### `useHistory`
+
+You can use `history` from `react-router-dom`'s `useHistory()` to make changes to and retrieve data from a user's history stack.
+
+```jsx
+import React from "react";
+import { useHistory } from "react-router-dom";
+
+const MyButton = () => {
+  const history = useHistory();
+
+  // Redirect to `/home` onClick
+  return <button onClick={history.push("/home")}>Go Home</button>;
+};
+
+export default MyComponent;
+```
+
+Note that `history` is **mutable**, so it's recommended to access `location` using `withRouter` (see below) instead of `useHistory` in order to ensure your lifecycle hooks can handle routing the way you expect them to.
+
+<details> <summary> `history` Properties </summary>
+
+| Property                         | Type       | Description                                                                    |
+| -------------------------------- | ---------- | ------------------------------------------------------------------------------ |
+| `history.length`                 | `Number`   | Number of entries in the history stack                                         |
+| `history.action`                 | `String`   | Current action (`PUSH`, `REPLACE`, or `POP`)                                   |
+| `history.location`               | `Object`   | Current location (includes `pathname`, `search`, `hash`, and `state`)          |
+| `history.push(path, [state])`    | `function` | Pushes a new entry onto the history stack                                      |
+| `history.replace(path, [state])` | `function` | Replaces the current entry on the history stack                                |
+| `history.go(n)`                  | `function` | Moves the pointer in the history stack by `n` entries                          |
+| `history.goBack()`               | `function` | Moves the pointer in the history stack back 1 (equal to `history.go(-1)`)      |
+| `history.goForward()`            | `function` | Moves the pointer in the history stack forward by 1 (equal to `history.go(1)`) |
+| `history.block(prompt)`          | `function` | Prevents navigation                                                            |
+
+</details>
+
+<details> <summary>`history.location` Property Examples </summary>
+
+```jsx
+{
+  pathname: '/somewhere',
+  search: '?some=search-string',
+  hash: '#howdy',
+  state: {
+    [userDefined]: true
+  }
+}
+```
+
+</details>
+
+#### `withRouter`
+
+You can also wrap a component with `react-router`'s `withRouter` to inject `history`, `location`, and `match` props into it:
+
+```jsx
+import React from "react";
+import { withRouter } from "react-router";
+
+const MyButton = ({ history, location, match }) => {
+  // Redirect to `/home` onClick
+  return <button onClick={history.push("/home")}>Go Home</button>;
+};
+
+export default withRouter(MyComponent);
+```
+
 # DIY Tutorial: Build a Website with React!
 
 Here's a simple tutorial on how to build your own React app and serve it on a public website!
