@@ -1,3 +1,7 @@
+/* FONT COLORS */
+/* COLORS */
+/* FONT COLORS */
+/* COLORS */
 .hljs {
   display: block;
   overflow-x: auto;
@@ -93,6 +97,8 @@
 
 a {
   color: #7E60B8 !important;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 body {
@@ -101,25 +107,21 @@ body {
   font-family: "Avenir Next W02", Helvetica, Arial, sans-serif;
 }
 
+.center {
+  text-align: center;
+}
+
 .logo {
   height: 70px;
-  margin: 10px 0px 0px 25px;
   width: 60px;
 }
 
 #page-content h1 {
-  border-bottom-color: #ebebeb;
+  border-bottom-color: #e3e3e3;
   border-bottom-style: solid;
-  border-bottom-width: 1px;
-  color: #7E60B8;
+  border-bottom-width: 1.5px;
   font-family: Arial Narrow;
   width: auto;
-}
-#page-content h2 {
-  color: #B8606E;
-}
-#page-content h3 {
-  color: #B8606E;
 }
 #page-content li {
   line-height: 1.5;
@@ -129,27 +131,43 @@ body {
 }
 #page-content p code {
   color: #B87E60;
-  padding: 0px 5px 0px 5px;
 }
 #page-content pre {
-  background-color: #ebebeb;
+  background-color: #e3e3e3;
   padding: 15px;
 }
 #page-content code {
   font-family: "Source Code Pro", Consolas, Monaco, Courier New, monospace;
   font-weight: 500;
 }
+#page-content summary {
+  font-style: italic;
+}
 #page-content summary:focus {
   outline-width: 0px;
+}
+#page-content table {
+  border-collapse: collapse;
+}
+#page-content th {
+  background-color: #FAEBFC;
+}
+#page-content table, #page-content th, #page-content td {
+  border: 1px solid #828282;
+  padding: 15px;
 }
 #page-content .img-and-text {
   display: flex;
   line-height: 1.7;
 }
 #page-content .img-and-text img {
-  box-shadow: 2px 2px 5px #ebebeb;
-  margin-right: 10px;
+  box-shadow: 2px 2px 5px #e3e3e3;
+  margin-right: 20px;
   width: 300px;
+}
+#page-content .output-container {
+  border: 1px solid #828282;
+  padding: 15px;
 }
 #page-content .profile-img {
   border-radius: 50%;
@@ -159,7 +177,7 @@ body {
 #page-content .profile-text {
   background-color: #FAEBFC;
   border-radius: 15px;
-  box-shadow: 2px 2px 5px #ebebeb;
+  box-shadow: 2px 2px 5px #e3e3e3;
   color: #606EB8;
   margin: -140px 0px 60px 170px;
   padding: 15px;
@@ -169,7 +187,7 @@ body {
   color: grey;
   font-size: 10pt;
   font-style: italic;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

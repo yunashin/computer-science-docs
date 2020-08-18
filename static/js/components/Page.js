@@ -31,7 +31,8 @@ const Page = ({ page }) => {
 
   useEffect(() => {
     if (page.file) {
-      const converter = new showdown.Converter();
+      let converter = new showdown.Converter();
+      converter.setOption("tables", true);
       const xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = () => {
         if (xmlhttp.status === 200 && xmlhttp.readyState === 4) {

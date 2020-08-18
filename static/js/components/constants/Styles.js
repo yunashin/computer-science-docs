@@ -2,7 +2,7 @@
 export const BASE_FONT_COLOR = "#4d4d4d";
 export const BASE_BACKGROUND_COLOR = "white";
 export const HOVER_COLOR = "#FCF5FC";
-export const LIGHT_GREY = "#ebebeb";
+export const LIGHT_GREY = "#e3e3e3";
 export const LIGHT_PINK = "#FAEBFC";
 
 // THEME COLORS
