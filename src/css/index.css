@@ -1,5 +1,14 @@
 /* FONT COLORS */
 /* COLORS */
+.output-box-div {
+  color: white;
+  background-color: #7e60b8;
+  line-height: 75px;
+  margin: 10px;
+  text-align: center;
+  width: 100px;
+}
+
 /* FONT COLORS */
 /* COLORS */
 .hljs {
@@ -96,7 +105,7 @@
 }
 
 a {
-  color: #7E60B8 !important;
+  color: #7AA293 !important;
   font-weight: bold;
   text-decoration: none;
 }
@@ -128,20 +137,50 @@ span code {
   text-align: center;
 }
 
+.flex {
+  align-items: stretch;
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
   height: 70px;
   width: 60px;
 }
 
+.m-v-25 {
+  margin: 25px 0px 25px 0px;
+}
+
 #page-content h1 {
+  font-family: Arial Narrow;
+  font-size: 44px;
+}
+#page-content h2 {
   border-bottom-color: #e3e3e3;
   border-bottom-style: solid;
-  border-bottom-width: 1.5px;
-  font-family: Arial Narrow;
+  border-bottom-width: 1px;
+  font-size: 36px;
   width: auto;
 }
-#page-content h1 code, #page-content h2 code, #page-content h3 code, #page-content h4 code {
-  color: #4d4d4d;
+#page-content h3 {
+  border-bottom-color: #e3e3e3;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-size: 28px;
+}
+#page-content h4 {
+  font-size: 20px;
+}
+#page-content h5 {
+  font-size: 18px;
+}
+#page-content h1 {
+  color: #B8606E;
+}
+#page-content h2, #page-content h3, #page-content h4, #page-content h5 {
+  color: #684366;
+  margin-top: 45px;
 }
 #page-content li {
   line-height: 1.5;
@@ -152,6 +191,7 @@ span code {
 #page-content pre {
   background-color: #e3e3e3;
   padding: 15px;
+  margin: 5px 0px 15px 0px;
 }
 #page-content pre code {
   color: #4d4d4d;
@@ -164,6 +204,7 @@ span code {
 }
 #page-content table {
   border-collapse: collapse;
+  margin-bottom: 35px;
 }
 #page-content th {
   background-color: #FAEBFC;
@@ -173,17 +214,17 @@ span code {
   padding: 15px;
 }
 #page-content .color-div {
-  color: #3e9676;
+  color: #54b390;
 }
 #page-content .color-span {
-  color: #5063c6;
+  color: #6da0cd;
 }
 #page-content .focused-div {
-  border: 2px solid #3e9676;
+  border: 2px solid #54b390;
   box-shadow: 2px 2px 5px grey;
 }
 #page-content .focused-span {
-  border: 2px solid #5063c6;
+  border: 2px solid #6da0cd;
   box-shadow: 2px 2px 5px grey;
 }
 #page-content .img-and-text {
@@ -196,9 +237,9 @@ span code {
   width: 300px;
 }
 #page-content .output-container {
-  border: 1px solid #828282;
-  margin: 15px 0px 15px 0px;
-  padding: 15px;
+  border: 1.5px solid #e3e3e3;
+  margin: 5px 0px 25px 0px;
+  padding: 35px;
 }
 #page-content .profile-img {
   border-radius: 50%;

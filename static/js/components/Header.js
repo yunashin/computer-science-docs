@@ -31,15 +31,19 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <Flex padding="10px">
-        <img
-          alt="yuna"
-          className="logo"
-          src="https://user-images.githubusercontent.com/30121322/90346560-03fcbd00-dff8-11ea-8a28-5b0f183b6670.png"
-        />
-        <HeaderTitle>Computer Science Docs</HeaderTitle>
-        <SubTitle>By Yuna Shin</SubTitle>
-        <FlexItem position="right">
+      <Flex justify="space-between" padding={10}>
+        <FlexItem left={0}>
+          <img
+            alt="yuna"
+            className="logo"
+            src="https://user-images.githubusercontent.com/30121322/90346560-03fcbd00-dff8-11ea-8a28-5b0f183b6670.png"
+          />
+          <HeaderTitle>Computer Science Docs</HeaderTitle>
+          <FlexItem alignItems="baseline">
+            <SubTitle>By Yuna Shin</SubTitle>
+          </FlexItem>
+        </FlexItem>
+        <FlexItem right={0}>
           <Button onClick={() => history.push("/sandbox")}>Sandbox</Button>
         </FlexItem>
       </Flex>

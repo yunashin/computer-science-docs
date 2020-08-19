@@ -2,21 +2,70 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const Wrapper = (align, padding) => styled.div`
+const Wrapper = (
+  alignItems,
+  direction,
+  justify,
+  padding,
+  textAlign,
+  wrap
+) => styled.div`
+  align-items: ${alignItems};
   display: flex;
-  padding: ${padding};
-  text-align: ${align};
+  flex-direction: ${direction};
+  flex-wrap: ${wrap};
+  justify-content: ${justify};
+  padding: ${padding}px;
+  text-align: ${textAlign};
 `;
 
-const Flex = ({ align = "start", children, padding = "0px" }) => {
-  const FlexWrapper = Wrapper(align, padding);
+/** @param justify: Justifies content horizontally */
+const Flex = ({
+  alignItems = "stretch",
+  children,
+  direction = "row",
+  justify = "flex-start",
+  padding = 0,
+  textAlign = "start",
+  wrap = "wrap",
+}) => {
+  const FlexWrapper = Wrapper(
+    alignItems,
+    direction,
+    justify,
+    padding,
+    textAlign,
+    wrap
+  );
+
   return <FlexWrapper>{children}</FlexWrapper>;
 };
 
 Flex.propTypes = {
-  align: PropTypes.oneOf(["end", "center", "start"]),
+  alignItems: PropTypes.oneOf([
+    "center",
+    "flex-start",
+    "flex-end",
+    "stretch",
+    "baseline",
+  ]),
   children: PropTypes.array,
-  padding: PropTypes.string,
+  direction: PropTypes.oneOf([
+    "column",
+    "column-reverse",
+    "row",
+    "row-reverse",
+  ]),
+  justify: PropTypes.oneOf([
+    "center",
+    "flex-start",
+    "flex-end",
+    "space-around",
+    "space-between",
+  ]),
+  padding: PropTypes.number,
+  textAlign: PropTypes.oneOf(["start", "center", "end"]),
+  wrap: PropTypes.oneOf(["nowrap", "wrap", "wrap-reverse"]),
 };
 
 export default Flex;

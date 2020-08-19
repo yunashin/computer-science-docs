@@ -1,8 +1,9 @@
 @import "constants.sass"
+@import "contentClasses.sass"
 @import "highlight.sass"
 
 a
-  color: $INDIGO !important
+  color: $SEA_GREEN !important
   font-weight: bold
   text-decoration: none
 
@@ -28,21 +29,48 @@ span
 .center
   text-align: center
 
+.flex
+  align-items: stretch
+  display: flex
+  justify-content: center
+
 .logo
   height: 70px
   width: 60px
 
+.m-v-25
+  margin: 25px 0px 25px 0px
+
 #page-content
   h1
+    font-family: Arial Narrow
+    font-size: 44px
+
+  h2
     border-bottom-color: $LIGHT_GREY
     border-bottom-style: solid
-    border-bottom-width: 1.5px
-    font-family: Arial Narrow
+    border-bottom-width: 1px
+    font-size: 36px
     width: auto
 
-  h1, h2, h3, h4
-    code
-      color: $BASE_FONT_COLOR
+  h3
+    border-bottom-color: $LIGHT_GREY
+    border-bottom-style: solid
+    border-bottom-width: 1px
+    font-size: 28px
+
+  h4
+    font-size: 20px
+
+  h5
+    font-size: 18px
+
+  h1
+    color: $MAUVE
+
+  h2, h3, h4, h5
+    color: $EGGPLANT
+    margin-top: 45px
 
   li
     line-height: 1.5
@@ -53,6 +81,7 @@ span
   pre
     background-color: $LIGHT_GREY
     padding: 15px
+    margin: 5px 0px 15px 0px
     code
       color: $BASE_FONT_COLOR
 
@@ -64,6 +93,7 @@ span
 
   table
     border-collapse: collapse
+    margin-bottom: 35px
 
   th
     background-color: $LIGHT_PINK
@@ -95,9 +125,9 @@ span
       width: 300px
 
   .output-container
-    border: 1px solid $DARK_GREY
-    margin: 15px 0px 15px 0px
-    padding: 15px
+    border: 1.5px solid $LIGHT_GREY
+    margin: 5px 0px 25px 0px
+    padding: 35px
 
   .profile-img
     border-radius: 50%

@@ -2,7 +2,39 @@
 
 ## The Basics
 
-**[CSS](https://www.w3.org/Style/CSS/Overview.en.html)** (Cascading Style Sheets) is a language. CSS files use the `.css` extension and are used to style HTML elements in an app.
+**[CSS](https://www.w3.org/Style/CSS/Overview.en.html)** (Cascading Style Sheets) is a **stylesheet language**. CSS files use the `.css` extension and are used to style HTML elements. You can also edit CSS properties in HTML and JavaScript files.
+
+<div class="flex">
+
+```html
+<!-- HTML -->
+
+<div class="title" style="color: blue">
+  <p>Hello World</p>
+</div>
+```
+
+```jsx
+// JavaScript
+
+<div className="title" style="color: blue">
+  <p>Hello World</p>
+</div>
+```
+
+</div>
+
+When thinking about laying elements out on a webpage, let's think of it as if we're **organizing a picnic**. 🌞🍎🍏🧺
+
+We've got:
+
+✔️ A checkered picnic blanket
+
+✔️ Lots of 🍎apples 🍏
+
+✔️ A big roll of paper towels
+
+✔️ Some other good food but no plates! 🙅‍♀️ Because you were a dumb and forgot. 🤦‍♀️
 
 <details> <summary> Usage in an HTML File </summary>
 
@@ -39,25 +71,37 @@ To import another style sheet into your CSS file, use `@import`:
 
 [🔗 W3Schools](https://www.w3schools.com/cssref/pr_import_rule.asp)
 
-### `display`
+## `display`
 
-<details> <summary> Default Block-Level/Inline Element Examples </summary>
+### Example <span class="color-div">Block-Level</span> & <span class="color-span">Inline</span> Elements
 
-| Block-Level Elements                                                                               | Inline Elements                  |
-| -------------------------------------------------------------------------------------------------- | -------------------------------- |
-| `<div>` <br> `<h1>-<h6>` <br> `<p>` <br> `<form>` <br> `<header>` <br> `<footer>` <br> `<section>` | `<span>` <br> `<a>` <br> `<img>` |
+| <span class="color-div">Block-Level Elements</span>                                                                               | <span class="color-span">Inline Elements</span>                 |
+| --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| <span class="color-div">`<div>` <br> `<h1>-<h6>` <br> `<p>` <br> `<form>` <br> `<header>` <br> `<footer>` <br> `<section>`</span> | <span class="color-span">`<span>` <br> `<a>` <br> `<img>`</span |
 
-</details>
+### `display` Property Values
 
-#### `display: block`: <span class="color-div">Block-Level Elements</span>
+| Value                                    | Description                                                  | Example                                                                                  |
+| ---------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| `none`                                   | Displays nothing                                             | To show/hide elements, `<script>` uses `display: none` by default                        |
+| <span class="color-div">`block`</span>   | Makes element <span class="color-div">**block-level**</span> | To display `<a>` elements as <span class="color-div">**block**</span> elements           |
+| <span class="color-span">`inline`</span> | Makes element <span class="color-span">**inline**</span>     | To make horizontal menus with <span class="color-span">**inline**</span> `<li>` elements |
+| `flex`                                   | Displays **children** inline                                 | To align elements horizontally for a header                                              |
 
-Wrap elements in <span class="color-div">**`<div>` (denoted in green)**</span> to put them in their own `block`.
+[🔗 W3Schools](https://www.w3schools.com/css/css_display_visibility.asp)
+
+### <span class="color-div">`block`: Block-Level Elements</span>
+
+Think of <span class="color-div">**block-level elements**</span> as
+
+- Wrap elements in <span class="color-div">**`<div>` (denoted in green)**</span> to put them in their own `block`.
+- You can also style <span class="color-span">**inline elements**</span> with `display: block;` to display them as <span class="color-div">**block-level elements**</span>.
 
 ```html
 <div>This is a <b>Block-Level Element</b>.</div>
 ```
 
-**Output:** Starts on a **new line** and takes up **full width**
+**🖨 Output:** Starts on a <span class="color-div">**new line**</span> and takes up <span class="color-div">**full width**</span>
 
 <div class="output-container">
   <div class="focused-div">
@@ -65,34 +109,32 @@ Wrap elements in <span class="color-div">**`<div>` (denoted in green)**</span> t
   </div>
 </div>
 
-#### `display: inline`: <span class="color-span">Inline Elements</span>
+### <span class="color-span">`inline`: Inline Elements</span>
 
-Wrap elements in <span class="color-span">**`<span>` (denoted in blue)**</span> to display them `inline`.
+- Wrap elements in <span class="color-span">**`<span>` (denoted in blue)**</span> to display them `inline`.
+- You can also `style` <span class="color-div">**block-level elements**</span> with `display: inline;` to display them as <span class="color-span">**inline elements**</span>.
 
 <!-- prettier-ignore -->
 ```html
-And this is an <span><b>Inline Element</b></span>.
+And that ➡ is an <span><b>Inline Element</b></span>.
 ```
 
-**Output:** Stays **inline** with adjacent elements only **takes up as much width needed to fit**
+**🖨 Output:** Stays <span class="color-span">**inline**</span> with adjacent elements and only <span class="color-span">**takes up as much width needed to fit**</span>
 
 <div class="output-container">
-  And this is an <span class="focused-span"><b>Inline Element</b></span>.
+  And that ➡ is an <span class="focused-span"><b>Inline Element</b></span>.
 </div>
 
-**`display` Property Values**
+### `flex`: CSS Flexbox Layout Module
 
-| Value    | Description                  | Example                                                           |
-| -------- | ---------------------------- | ----------------------------------------------------------------- |
-| `none`   | Displays nothing             | To show/hide elements, `<script>` uses `display: none` by default |
-| `inline` | Makes element inline         | To make horizontal menus with inline `<li>` elements              |
-| `block`  | Makes element block-level    | To display `<a>` elements as block elements                       |
-| `flex`   | Displays **children** inline | To align elements horizontally for a header                       |
+Setting `display: flex;` allows you to utilize the [CSS Flexbox Layout Module](https://www.w3schools.com/css/css3_flexbox.asp) by specifying the `style`d element as the **flex container**. You're basically making the `<div>` a **flexible box**, in which its children can be laid out in various different ways.
 
-**`display: flex`: Making Children Inline Horizontally`**
+In this example, we want to create a header component for a webpage and display 4 links side by side horizontally. So, we `style` the `<div>`, our **flex container**, with `display: flex;`, which by default displays its children, the **flex items**, **inline horizontally from left to right**.
 
 ```html
+<!-- Flex container -->
 <div display="flex">
+  <!-- Flex items -->
   <a href="./">Website Title</a>
   <a href="./">About Us</a>
   <a href="./">Blog</a>
@@ -100,7 +142,7 @@ And this is an <span><b>Inline Element</b></span>.
 </div>
 ```
 
-**Output:**
+**🖨 Output:** Children are displayed inline **horizontally** from **left to right** by default.
 
 <div class="output-container">
   <div display="flex">
@@ -111,11 +153,188 @@ And this is an <span><b>Inline Element</b></span>.
   </div>
 </div>
 
-[🔗 W3Schools](https://www.w3schools.com/css/css_display_visibility.asp)
+#### Flex Container Properties
+
+##### `flex-direction`: Modifying Direction of Flex Item Stack
+
+`flex-direction` determines whether to stack **flex items** horizontally or vertically. How nifty! 🤩
+
+```css
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+```
+
+| Value            | Description                                                  |
+| ---------------- | ------------------------------------------------------------ |
+| `column`         | ⬇️ Stacks **flex items** **vertically from top to bottom**   |
+| `column-reverse` | ⬆️ Stacks **flex items** **vertically from bottom to top**   |
+| `row`            | ➡️ Stacks **flex items** **horizontally from left to right** |
+| `row-reverse`    | ⬅️ Stacks **flex items** **horizontally from right to left** |
+
+##### `flex-wrap`: Wrapping Flex Items
+
+**Wrapping** means continuing to display on the next line if all **flex items** don't fit on one line.
+
+```css
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+```
+
+| `wrap` | Flex items will wrap if necessary |
+| `nowrap` | (_Default_) Flex items will not wrap |
+| `wrap-reverse` | Flex items will wrap if necessary in reverse order |
+
+##### `flex-flow`: `flex-direction` + `flex-wrap`
+
+`flex-flow` lets you set values for both `flex-direction` and `flex-wrap` in that order:
+
+```css
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+```
+
+##### `justify-content`: Aligning Flex Items Horizontally ↔️
+
+Now here's where the picnic analogy comes into play. 🎤🧺 Think of the **picnic blanket** as a blank webpage. The **🍎apples** 🍏 represent your basic HTML elements (i.e. `divs` and `spans`). That big 🧻**roll of paper towels** is going to comprise our makeshift plates for today's picnic! 🥳
+
+```css
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+```
+
+| Value           | Description                                                             |
+| --------------- | ----------------------------------------------------------------------- |
+| `center`        | Aligns **flex items** at the **center** of the container                |
+| `flex-start`    | (_Default_) Aligns **flex items** at the **start** of the container     |
+| `flex-end`      | Aligns **flex items** at the **end** of the container                   |
+| `space-around`  | Displays **flex items** with space before, between, and after the lines |
+| `space-between` | Displays flex itmes with space between the lines                        |
+
+##### `align-items`: Aligning Flex Items Vertically ↕️
+
+```css
+.flex-container {
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+```
+
+| Value        | Description                                                             |
+| ------------ | ----------------------------------------------------------------------- |
+| `center`     | Aligns **flex items** in the **middle** of the container                |
+| `flex-start` | Aligns **flex items** at the **top** of the container                   |
+| `flex-end`   | Aligns **flex items** at the **bottom** of the container                |
+| `stretch`    | (_Default_) Stretches **flex items** to fill the container              |
+| `baseline`   | Aligns **flex items** such as their vertically central baselines aligns |
+
+##### `align-content`: Aligning Flex Lines
+
+```css
+.flex-container {
+  display: flex;
+  align-content: space-between;
+  height: 600px;
+  flex-wrap: wrap;
+}
+```
+
+| Value           | Description                                                         |
+| --------------- | ------------------------------------------------------------------- |
+| `space-between` | Displays **flex lines** with equal space between them               |
+| `space-around`  | Displays **flex lines** with space before, between, and after them  |
+| `stretch`       | (_Default_) Stretches **flex lines** to take up the remaining space |
+| `center`        | Displays **flex lines** in the middle of the container              |
+| `flex-start`    | Displays **flex lines** at the start of the container               |
+| `flex-end`      | Displays **flex lines** at the end of the container                 |
+
+#### Flex Item Properties
+
+Child elements of a **flex container** automatically become flex items.
+
+##### `order`: Sorting Order of Flex Items
+
+`order` lets you manage the display order of **flex items**, overriding their actual order in the layout. Its value must be a number and it's 0 by default.
+
+```html
+<!-- HTML -->
+<div class="flex-container">
+  <div style="order: 3">1</div>
+  <div style="order: 2">2</div>
+  <div style="order: 4">3</div>
+  <div style="order: 1">4</div>
+</div>
+```
+
+```css
+/* CSS */
+.box {
+  color: white;
+  background-color: #7e60b8;
+  line-height: 75px;
+  margin: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+}
+```
+
+**🖨 Output:** Prints elements in specified `order`
+
+<div class="output-container" style="display: flex; align-items: stretch;">
+  <div class="output-box-div" style="order: 3">1</div>
+  <div class="output-box-div" style="order: 2">2</div>
+  <div class="output-box-div" style="order: 4">3</div>
+  <div class="output-box-div" style="order: 1">4</div>
+</div>
+
+##### `flex-grow`: Making Flex Items Wider/Longer
+
+`flex-grow` specifies how much a flex item can grow in a given direction relative to the other flex items. Its value must be a number and it's 0 by default.
+
+```html
+<!-- HTML -->
+<div class="flex-container">
+  <div style="flex-grow: 1">1</div>
+  <div style="flex-grow: 1">1</div>
+  <div style="flex-grow: 8">8</div>
+</div>
+```
+
+```css
+.flex-container {
+  display: flex;
+  align-items: stretch;
+}
+```
+
+**🖨 Output:** Makes the third flex item grow 8x faster than the others
+
+<div class="output-container" style="display: flex; align-items: stretch;">
+  <div class="output-box-div" style="flex-grow: 1">1</div>
+  <div class="output-box-div" style="flex-grow: 1">1</div>
+  <div class="output-box-div" style="flex-grow: 8">8</div>
+</div>
 
 ## Aligning and Positioning Elements on a Page
 
 [🔗 W3Schools](https://www.w3schools.com/css/css_align.asp)
+
+#### Perfect Centering
+
+Perfect centering (both horizontally and vertically) requires both `justify-content` and `align-items` to be set to `center`.
 
 #### `text-align`: Aligning Horizontally (Left ↔ Right)
 
@@ -124,15 +343,9 @@ And this is an <span><b>Inline Element</b></span>.
 ```
 
 <div class="output-container">
-  <div class="center focused-div">text-align: <b>center</b></div>
-</div>
-
-<div class="output-container">
-  <div class="align-start focused-div">text-align: <b>start</b></div>
-</div>
-
-<div class="output-container">
-  <div class="align-end focused-div">text-align: <b>end</b></div>
+  <div class="m-v-25 center focused-div">text-align: <b>center</b></div>
+  <div class="m-v-25 align-start focused-div">text-align: <b>start</b></div>
+  <div class="m-v-25 align-end focused-div">text-align: <b>end</b></div>
 </div>
 
 ### `position`
@@ -273,7 +486,7 @@ td {
 
 </details>
 
-**Output:**
+**🖨 Output:**
 
 <div class="output-container">
   <table style="border-collapse: collapse; border: 1px solid black; padding: 10px;">
