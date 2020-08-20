@@ -11,19 +11,24 @@ export const SidebarContent = [
     title: "About Me",
   },
   {
-    file: "static/md/React.md",
-    path: "/react",
-    title: "React",
-  },
-  {
     file: "static/md/CSS.md",
     path: "/css",
     title: "CSS",
   },
   {
+    file: "static/md/HTML.md",
+    path: "/html",
+    title: "HTML",
+  },
+  {
     file: "static/md/JavaScript.md",
     path: "/js",
     title: "JavaScript",
+  },
+  {
+    file: "static/md/React.md",
+    path: "/react",
+    title: "React",
   },
   {
     file: "static/md/Sass.md",

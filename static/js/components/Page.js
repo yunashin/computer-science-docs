@@ -7,7 +7,7 @@ const PageContainer = styled.div`
   background-color: ${BASE_BACKGROUND_COLOR};
   height: auto;
   margin: 120px 60px 100px 300px;
-  max-width: 1000px;
+  max-width: 1120px;
   position: relative;
   width: auto;
   z-index: 3;

@@ -1,9 +1,17 @@
 /* FONT COLORS */
 /* COLORS */
+.color-div {
+  color: #b95b6b;
+}
+
+.color-span {
+  color: #54b390;
+}
+
 .output-box-div {
   color: white;
   background-color: #7e60b8;
-  line-height: 75px;
+  height: 75px;
   margin: 10px;
   text-align: center;
   width: 100px;
@@ -104,6 +112,13 @@
   font-weight: bold;
 }
 
+.flex {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 10px;
+}
+
 a {
   color: #7AA293 !important;
   font-weight: bold;
@@ -114,6 +129,7 @@ body {
   background-color: #ffffff;
   color: #4d4d4d;
   font-family: "Avenir Next W02", Helvetica, Arial, sans-serif;
+  font-size: 20px;
 }
 
 code {
@@ -137,12 +153,6 @@ span code {
   text-align: center;
 }
 
-.flex {
-  align-items: stretch;
-  display: flex;
-  justify-content: center;
-}
-
 .logo {
   height: 70px;
   width: 60px;
@@ -154,31 +164,27 @@ span code {
 
 #page-content h1 {
   font-family: Arial Narrow;
-  font-size: 44px;
+  font-size: 48px;
 }
 #page-content h2 {
-  border-bottom-color: #e3e3e3;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  font-size: 36px;
-  width: auto;
+  font-size: 40px;
 }
 #page-content h3 {
-  border-bottom-color: #e3e3e3;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  font-size: 28px;
+  font-size: 36px;
 }
 #page-content h4 {
-  font-size: 20px;
+  font-size: 30px;
 }
 #page-content h5 {
-  font-size: 18px;
+  font-size: 26px;
 }
 #page-content h1 {
   color: #B8606E;
 }
 #page-content h2, #page-content h3, #page-content h4, #page-content h5 {
+  border-bottom-color: #e3e3e3;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
   color: #684366;
   margin-top: 45px;
 }
@@ -205,6 +211,7 @@ span code {
 #page-content table {
   border-collapse: collapse;
   margin-bottom: 35px;
+  width: 100%;
 }
 #page-content th {
   background-color: #FAEBFC;
@@ -213,18 +220,12 @@ span code {
   border: 1px solid #828282;
   padding: 15px;
 }
-#page-content .color-div {
-  color: #54b390;
-}
-#page-content .color-span {
-  color: #6da0cd;
-}
 #page-content .focused-div {
-  border: 2px solid #54b390;
+  border: 2px solid #b95b6b;
   box-shadow: 2px 2px 5px grey;
 }
 #page-content .focused-span {
-  border: 2px solid #6da0cd;
+  border: 2px solid #54b390;
   box-shadow: 2px 2px 5px grey;
 }
 #page-content .img-and-text {

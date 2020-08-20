@@ -1,6 +1,7 @@
 @import "constants.sass"
-@import "contentClasses.sass"
+@import "contentPageClasses.sass"
 @import "highlight.sass"
+@import style.sass
 
 a
   color: $SEA_GREEN !important
@@ -11,6 +12,7 @@ body
   background-color: #ffffff
   color: $BASE_FONT_COLOR
   font-family: "Avenir Next W02", Helvetica, Arial, sans-serif
+  font-size: 20px
 
 code
   color: $WOOD
@@ -29,11 +31,6 @@ span
 .center
   text-align: center
 
-.flex
-  align-items: stretch
-  display: flex
-  justify-content: center
-
 .logo
   height: 70px
   width: 60px
@@ -44,31 +41,27 @@ span
 #page-content
   h1
     font-family: Arial Narrow
-    font-size: 44px
+    font-size: 48px
 
   h2
-    border-bottom-color: $LIGHT_GREY
-    border-bottom-style: solid
-    border-bottom-width: 1px
-    font-size: 36px
-    width: auto
+    font-size: 40px
 
   h3
-    border-bottom-color: $LIGHT_GREY
-    border-bottom-style: solid
-    border-bottom-width: 1px
-    font-size: 28px
+    font-size: 36px
 
   h4
-    font-size: 20px
+    font-size: 30px
 
   h5
-    font-size: 18px
+    font-size: 26px
 
   h1
     color: $MAUVE
 
   h2, h3, h4, h5
+    border-bottom-color: $LIGHT_GREY
+    border-bottom-style: solid
+    border-bottom-width: 1px
     color: $EGGPLANT
     margin-top: 45px
 
@@ -94,6 +87,7 @@ span
   table
     border-collapse: collapse
     margin-bottom: 35px
+    width: 100%
 
   th
     background-color: $LIGHT_PINK
@@ -102,18 +96,12 @@ span
     border: 1px solid $DARK_GREY
     padding: 15px
 
-  .color-div
-    color: $TEAL
-
-  .color-span
-    color: $BLUE
-
   .focused-div
-    border: 2px solid $TEAL
+    border: 2px solid $DIV
     box-shadow: 2px 2px 5px grey
 
   .focused-span
-    border: 2px solid $BLUE
+    border: 2px solid $SPAN
     box-shadow: 2px 2px 5px grey
 
   .img-and-text

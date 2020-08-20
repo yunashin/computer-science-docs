@@ -1,8 +1,8 @@
 # CSS
 
-## The Basics
+**[CSS](https://www.w3.org/Style/CSS/Overview.en.html)** (Cascading Style Sheets) is a **stylesheet language**. CSS files use the `.css` extension and are used to style HTML elements.
 
-**[CSS](https://www.w3.org/Style/CSS/Overview.en.html)** (Cascading Style Sheets) is a **stylesheet language**. CSS files use the `.css` extension and are used to style HTML elements. You can also edit CSS properties in HTML and JavaScript files.
+You can also edit CSS properties in HTML and JavaScript files. Note that in JavaScript, we use `className` instead of `class`.
 
 <div class="flex">
 
@@ -17,28 +17,24 @@
 ```jsx
 // JavaScript
 
-<div className="title" style="color: blue">
-  <p>Hello World</p>
-</div>
+return (
+  <div className="title" style="color: blue">
+    <p>Hello World</p>
+  </div>
+);
 ```
 
 </div>
 
-When thinking about laying elements out on a webpage, let's think of it as if we're **organizing a picnic**. 🌞🍎🍏🧺
+## Height & Width
 
-We've got:
+You can use the `height` and `width` properties to adjust the respective dimensions of
 
-✔️ A checkered picnic blanket
-
-✔️ Lots of 🍎apples 🍏
-
-✔️ A big roll of paper towels
-
-✔️ Some other good food but no plates! 🙅‍♀️ Because you were a dumb and forgot. 🤦‍♀️
-
-<details> <summary> Usage in an HTML File </summary>
+## Linking a CSS File To an HTML Page
 
 ```html
+<!-- HTML -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,11 +48,9 @@ We've got:
 </html>
 ```
 
-</details>
-
 [🔗 W3Schools](https://www.w3schools.com/css/css_howto.asp)
 
-### Importing a Style Sheet
+## Importing a Style Sheet
 
 To import another style sheet into your CSS file, use `@import`:
 
@@ -71,24 +65,11 @@ To import another style sheet into your CSS file, use `@import`:
 
 [🔗 W3Schools](https://www.w3schools.com/cssref/pr_import_rule.asp)
 
-## `display`
-
-### Example <span class="color-div">Block-Level</span> & <span class="color-span">Inline</span> Elements
+## <span class="color-div">Block-Level</span> & <span class="color-span">Inline</span> Elements
 
 | <span class="color-div">Block-Level Elements</span>                                                                               | <span class="color-span">Inline Elements</span>                 |
 | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | <span class="color-div">`<div>` <br> `<h1>-<h6>` <br> `<p>` <br> `<form>` <br> `<header>` <br> `<footer>` <br> `<section>`</span> | <span class="color-span">`<span>` <br> `<a>` <br> `<img>`</span |
-
-### `display` Property Values
-
-| Value                                    | Description                                                  | Example                                                                                  |
-| ---------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| `none`                                   | Displays nothing                                             | To show/hide elements, `<script>` uses `display: none` by default                        |
-| <span class="color-div">`block`</span>   | Makes element <span class="color-div">**block-level**</span> | To display `<a>` elements as <span class="color-div">**block**</span> elements           |
-| <span class="color-span">`inline`</span> | Makes element <span class="color-span">**inline**</span>     | To make horizontal menus with <span class="color-span">**inline**</span> `<li>` elements |
-| `flex`                                   | Displays **children** inline                                 | To align elements horizontally for a header                                              |
-
-[🔗 W3Schools](https://www.w3schools.com/css/css_display_visibility.asp)
 
 ### <span class="color-div">`block`: Block-Level Elements</span>
 
@@ -116,18 +97,31 @@ Think of <span class="color-div">**block-level elements**</span> as
 
 <!-- prettier-ignore -->
 ```html
-And that ➡ is an <span><b>Inline Element</b></span>.
+That is an ➡ <span><b>Inline Element</b></span>.
 ```
 
 **🖨 Output:** Stays <span class="color-span">**inline**</span> with adjacent elements and only <span class="color-span">**takes up as much width needed to fit**</span>
 
 <div class="output-container">
-  And that ➡ is an <span class="focused-span"><b>Inline Element</b></span>.
+  That is an ➡ <span class="focused-span"><b>Inline Element</b></span>.
 </div>
+
+### `display`
+
+| Value                                    | Description                                                  | Example                                                                                  |
+| ---------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| `none`                                   | Displays nothing                                             | To show/hide elements, `<script>` uses `display: none` by default                        |
+| <span class="color-div">`block`</span>   | Makes element <span class="color-div">**block-level**</span> | To display `<a>` elements as <span class="color-div">**block**</span> elements           |
+| <span class="color-span">`inline`</span> | Makes element <span class="color-span">**inline**</span>     | To make horizontal menus with <span class="color-span">**inline**</span> `<li>` elements |
+| `flex`                                   | Displays **children** inline                                 | To align elements horizontally for a header                                              |
+
+[🔗 W3Schools](https://www.w3schools.com/css/css_display_visibility.asp)
 
 ### `flex`: CSS Flexbox Layout Module
 
-Setting `display: flex;` allows you to utilize the [CSS Flexbox Layout Module](https://www.w3schools.com/css/css3_flexbox.asp) by specifying the `style`d element as the **flex container**. You're basically making the `<div>` a **flexible box**, in which its children can be laid out in various different ways.
+Setting `display: flex;` allows you to utilize the [CSS Flexbox Layout Module](https://www.w3schools.com/css/css3_flexbox.asp) by specifying the `style`d element as the **flex container**.
+
+You're basically making the `<div>` a **flexible box**, in which its children can be laid out in various different ways.
 
 In this example, we want to create a header component for a webpage and display 4 links side by side horizontally. So, we `style` the `<div>`, our **flex container**, with `display: flex;`, which by default displays its children, the **flex items**, **inline horizontally from left to right**.
 
@@ -155,6 +149,8 @@ In this example, we want to create a header component for a webpage and display 
 
 #### Flex Container Properties
 
+Flex
+
 ##### `flex-direction`: Modifying Direction of Flex Item Stack
 
 `flex-direction` determines whether to stack **flex items** horizontally or vertically. How nifty! 🤩
@@ -166,16 +162,16 @@ In this example, we want to create a header component for a webpage and display 
 }
 ```
 
-| Value            | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| `column`         | ⬇️ Stacks **flex items** **vertically from top to bottom**   |
-| `column-reverse` | ⬆️ Stacks **flex items** **vertically from bottom to top**   |
-| `row`            | ➡️ Stacks **flex items** **horizontally from left to right** |
-| `row-reverse`    | ⬅️ Stacks **flex items** **horizontally from right to left** |
+| Value            | Description                                             |
+| ---------------- | ------------------------------------------------------- |
+| `column`         | ⬇️ Stacks flex items from **top to bottom**             |
+| `column-reverse` | ⬆️ Stacks flex items from **bottom to top**             |
+| `row`            | _(Default)_ ➡️ Stacks flex items from **left to right** |
+| `row-reverse`    | ⬅️ Stacks flex items from **right to left**             |
 
 ##### `flex-wrap`: Wrapping Flex Items
 
-**Wrapping** means continuing to display on the next line if all **flex items** don't fit on one line.
+**Wrapping** means that if all of a flex container's children don't fit within its boundaries as they continue to go in their specified `flex-direction`, the flex container `wrap`s any extra flex items onto the following line.
 
 ```css
 .flex-container {
@@ -184,9 +180,46 @@ In this example, we want to create a header component for a webpage and display 
 }
 ```
 
-| `wrap` | Flex items will wrap if necessary |
-| `nowrap` | (_Default_) Flex items will not wrap |
+| Value          | Description                                        |
+| -------------- | -------------------------------------------------- |
+| `wrap`         | Flex items will wrap if necessary                  |
+| `nowrap`       | _(Default)_ Flex items will not wrap               |
 | `wrap-reverse` | Flex items will wrap if necessary in reverse order |
+
+```html
+<!-- HTML -->
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+</div>
+```
+
+**🖨 Output:** **Wraps flex items onto the next line** if they don't fit in the same row as previous flex items (within the boundaries of the flex container).
+
+<div class="output-container" style="display: flex; flex-wrap: wrap;">
+  <div class="output-box-div">1</div>
+  <div class="output-box-div">2</div>
+  <div class="output-box-div">3</div>
+  <div class="output-box-div">4</div>
+  <div class="output-box-div">5</div>
+  <div class="output-box-div">6</div>
+  <div class="output-box-div">7</div>
+  <div class="output-box-div">8</div>
+  <div class="output-box-div">9</div>
+  <div class="output-box-div">10</div>
+  <div class="output-box-div">11</div>
+  <div class="output-box-div">12</div>
+</div>
 
 ##### `flex-flow`: `flex-direction` + `flex-wrap`
 
@@ -201,8 +234,6 @@ In this example, we want to create a header component for a webpage and display 
 
 ##### `justify-content`: Aligning Flex Items Horizontally ↔️
 
-Now here's where the picnic analogy comes into play. 🎤🧺 Think of the **picnic blanket** as a blank webpage. The **🍎apples** 🍏 represent your basic HTML elements (i.e. `divs` and `spans`). That big 🧻**roll of paper towels** is going to comprise our makeshift plates for today's picnic! 🥳
-
 ```css
 .flex-container {
   display: flex;
@@ -212,9 +243,9 @@ Now here's where the picnic analogy comes into play. 🎤🧺 Think of the **pic
 
 | Value           | Description                                                             |
 | --------------- | ----------------------------------------------------------------------- |
-| `center`        | Aligns **flex items** at the **center** of the container                |
-| `flex-start`    | (_Default_) Aligns **flex items** at the **start** of the container     |
-| `flex-end`      | Aligns **flex items** at the **end** of the container                   |
+| `center`        | Aligns **flex items** at the **center** 🍎 of the container             |
+| `flex-start`    | 🍎 _(Default)_ Aligns **flex items** at the **start** of the container  |
+| `flex-end`      | Aligns **flex items** at the **end** of the container 🍎                |
 | `space-around`  | Displays **flex items** with space before, between, and after the lines |
 | `space-between` | Displays flex itmes with space between the lines                        |
 
@@ -233,7 +264,7 @@ Now here's where the picnic analogy comes into play. 🎤🧺 Think of the **pic
 | `center`     | Aligns **flex items** in the **middle** of the container                |
 | `flex-start` | Aligns **flex items** at the **top** of the container                   |
 | `flex-end`   | Aligns **flex items** at the **bottom** of the container                |
-| `stretch`    | (_Default_) Stretches **flex items** to fill the container              |
+| `stretch`    | _(Default)_ Stretches **flex items** to fill the container              |
 | `baseline`   | Aligns **flex items** such as their vertically central baselines aligns |
 
 ##### `align-content`: Aligning Flex Lines
@@ -251,7 +282,7 @@ Now here's where the picnic analogy comes into play. 🎤🧺 Think of the **pic
 | --------------- | ------------------------------------------------------------------- |
 | `space-between` | Displays **flex lines** with equal space between them               |
 | `space-around`  | Displays **flex lines** with space before, between, and after them  |
-| `stretch`       | (_Default_) Stretches **flex lines** to take up the remaining space |
+| `stretch`       | _(Default)_ Stretches **flex lines** to take up the remaining space |
 | `center`        | Displays **flex lines** in the middle of the container              |
 | `flex-start`    | Displays **flex lines** at the start of the container               |
 | `flex-end`      | Displays **flex lines** at the end of the container                 |
