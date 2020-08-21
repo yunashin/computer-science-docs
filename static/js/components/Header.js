@@ -10,9 +10,10 @@ import FlexItem from "./FlexItem";
 const HeaderContainer = styled.div`
   background-color: ${HOVER_COLOR};
   box-shadow: 1px 1px 5px grey;
+  font-family: Arial Narrow;
+  font-size: 18px;
   height: 90px;
   left: 0;
-  position: absolute;
   top: 0;
   width: 100%;
 `;

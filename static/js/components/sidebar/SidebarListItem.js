@@ -16,9 +16,9 @@ const Item = (backgroundColor, isSelected) => styled.li`
   height: 20px;
   list-style: none;
   margin: auto;
+  max-width: 400px;
   padding: 10px;
   vertical-align: middle;
-  width: 200px;
 `;
 
 const getBackgroundColor = (isSelected, isHoveredOver) => {

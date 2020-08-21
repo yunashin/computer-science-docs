@@ -22,6 +22,11 @@ The plates are ✨ **magical** ✨ because even though they're invisible to the 
 
 🔵<span class="color-span">`<span>`</span>🔵 plates are loving of their apples and only **take up as much width needed** to fit them.
 
+<div class="output-container">
+  <div class="color-div">🍏</div>
+  <span class="color-span">🍏</span>
+</div>
+
 ## HTML Elements
 
 An HTML element's defined by its **start tag**, **content**, and **end tag**.

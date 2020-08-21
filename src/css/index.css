@@ -129,7 +129,8 @@ body {
   background-color: #ffffff;
   color: #4d4d4d;
   font-family: "Avenir Next W02", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+  margin: 0px;
 }
 
 code {
@@ -163,11 +164,20 @@ span code {
 }
 
 #page-content h1 {
+  color: #B8606E;
   font-family: Arial Narrow;
   font-size: 48px;
+  padding: 15px 15px 0px 15px;
 }
 #page-content h2 {
+  border-bottom-color: #828282;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #684366;
+  font-family: Arial Narrow;
   font-size: 40px;
+  margin: 25px 0px 0px 0px;
+  padding: 15px 15px 0px 15px;
 }
 #page-content h3 {
   font-size: 36px;
@@ -178,21 +188,22 @@ span code {
 #page-content h5 {
   font-size: 26px;
 }
-#page-content h1 {
-  color: #B8606E;
-}
-#page-content h2, #page-content h3, #page-content h4, #page-content h5 {
+#page-content h3, #page-content h4, #page-content h5 {
   border-bottom-color: #e3e3e3;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   color: #684366;
-  margin-top: 45px;
+  font-family: Arial Narrow;
+  margin: 25px 0px 0px 0px;
+  padding: 15px 15px 0px 15px;
 }
 #page-content li {
   line-height: 1.5;
+  padding: 10px;
 }
 #page-content p {
   line-height: 1.5;
+  padding: 8px;
 }
 #page-content pre {
   background-color: #e3e3e3;
@@ -210,7 +221,7 @@ span code {
 }
 #page-content table {
   border-collapse: collapse;
-  margin-bottom: 35px;
+  margin: 35px 0px 35px 0px;
   width: 100%;
 }
 #page-content th {

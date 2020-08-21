@@ -67,15 +67,13 @@ To import another style sheet into your CSS file, use `@import`:
 
 ## <span class="color-div">Block-Level</span> & <span class="color-span">Inline</span> Elements
 
-| <span class="color-div">Block-Level Elements</span>                                                                               | <span class="color-span">Inline Elements</span>                 |
-| --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| <span class="color-div">`<div>` <br> `<h1>-<h6>` <br> `<p>` <br> `<form>` <br> `<header>` <br> `<footer>` <br> `<section>`</span> | <span class="color-span">`<span>` <br> `<a>` <br> `<img>`</span |
-
 ### <span class="color-div">`block`: Block-Level Elements</span>
 
-Think of <span class="color-div">**block-level elements**</span> as
+<span class="color-div">`<div>` <br> `<h1>-<h6>` <br> `<p>` <br> `<form>` <br> `<header>` <br> `<footer>` <br> `<section>`</span>
 
-- Wrap elements in <span class="color-div">**`<div>` (denoted in green)**</span> to put them in their own `block`.
+Think of <span class="color-div">**block-level elements**</span> as 🔴 **greedy parents** 🔴, who only half-hug their children, hugging only the height of their tallest children and stretching out to **full width** by default, taking up a whole **"block level"**.
+
+- Wrap elements in <span class="color-div">**`<div>`**</span> to put them in their own `block`.
 - You can also style <span class="color-span">**inline elements**</span> with `display: block;` to display them as <span class="color-div">**block-level elements**</span>.
 
 ```html
@@ -92,7 +90,11 @@ Think of <span class="color-div">**block-level elements**</span> as
 
 ### <span class="color-span">`inline`: Inline Elements</span>
 
-- Wrap elements in <span class="color-span">**`<span>` (denoted in blue)**</span> to display them `inline`.
+<span class="color-span">`<span>` <br> `<a>` <br> `<img>`</span>
+
+Think of <span class="color-span">**inline elements**</span> as 💙 **loving parents** 💙, who hug their children fully, only taking up as much **height and width needed to fit its children**.
+
+- Wrap elements in <span class="color-span">**`<span>`**</span> to display them `inline`.
 - You can also `style` <span class="color-div">**block-level elements**</span> with `display: inline;` to display them as <span class="color-span">**inline elements**</span>.
 
 <!-- prettier-ignore -->
@@ -100,7 +102,7 @@ Think of <span class="color-div">**block-level elements**</span> as
 That is an ➡ <span><b>Inline Element</b></span>.
 ```
 
-**🖨 Output:** Stays <span class="color-span">**inline**</span> with adjacent elements and only <span class="color-span">**takes up as much width needed to fit**</span>
+**🖨 Output:** Stays <span class="color-span">**inline**</span> with adjacent elements and <span class="color-span">**only takes up as much width needed to fit**</span>
 
 <div class="output-container">
   That is an ➡ <span class="focused-span"><b>Inline Element</b></span>.
@@ -111,7 +113,7 @@ That is an ➡ <span><b>Inline Element</b></span>.
 | Value                                    | Description                                                  | Example                                                                                  |
 | ---------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
 | `none`                                   | Displays nothing                                             | To show/hide elements, `<script>` uses `display: none` by default                        |
-| <span class="color-div">`block`</span>   | Makes element <span class="color-div">**block-level**</span> | To display `<a>` elements as <span class="color-div">**block**</span> elements           |
+| <span class="color-div">`block`</span>   | Makes element <span class="color-div">**block-level**</span> | To display <span class="color-div">**block-level**</span> `<a>` elements                 |
 | <span class="color-span">`inline`</span> | Makes element <span class="color-span">**inline**</span>     | To make horizontal menus with <span class="color-span">**inline**</span> `<li>` elements |
 | `flex`                                   | Displays **children** inline                                 | To align elements horizontally for a header                                              |
 
@@ -119,11 +121,15 @@ That is an ➡ <span><b>Inline Element</b></span>.
 
 ### `flex`: CSS Flexbox Layout Module
 
+#### Flex Container Properties
+
+**Flex Containers** are denoted by `display: flex;`. Their children elements are called **Flex Items**.
+
 Setting `display: flex;` allows you to utilize the [CSS Flexbox Layout Module](https://www.w3schools.com/css/css3_flexbox.asp) by specifying the `style`d element as the **flex container**.
 
 You're basically making the `<div>` a **flexible box**, in which its children can be laid out in various different ways.
 
-In this example, we want to create a header component for a webpage and display 4 links side by side horizontally. So, we `style` the `<div>`, our **flex container**, with `display: flex;`, which by default displays its children, the **flex items**, **inline horizontally from left to right**.
+In this example, we want to create a header component for a webpage and display 4 links side by side horizontally. So, we `style` the `<div>`, our **flex container**, with `display: flex;`, which by default displays its children, the **flex items**, **inline horizontally from left to right**. ➡️
 
 ```html
 <!-- Flex container -->
@@ -146,10 +152,6 @@ In this example, we want to create a header component for a webpage and display 
     <a href="./">Contact Us</a>
   </div>
 </div>
-
-#### Flex Container Properties
-
-Flex
 
 ##### `flex-direction`: Modifying Direction of Flex Item Stack
 
@@ -232,7 +234,7 @@ Flex
 }
 ```
 
-##### `justify-content`: Aligning Flex Items Horizontally ↔️
+##### `justify-content`: ↔️ Horizontal Flex Item Alignment
 
 ```css
 .flex-container {
@@ -249,7 +251,7 @@ Flex
 | `space-around`  | Displays **flex items** with space before, between, and after the lines |
 | `space-between` | Displays flex itmes with space between the lines                        |
 
-##### `align-items`: Aligning Flex Items Vertically ↕️
+##### `align-items`: ↕️ Vertical Flex Item Alignment
 
 ```css
 .flex-container {
