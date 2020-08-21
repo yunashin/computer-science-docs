@@ -41,7 +41,7 @@ const Header = () => {
           />
           <HeaderTitle>Computer Science Docs</HeaderTitle>
           <FlexItem alignItems="baseline">
-            <SubTitle>By Yuna Shin</SubTitle>
+            {/* <SubTitle>By Yuna Shin</SubTitle> */}
           </FlexItem>
         </FlexItem>
         <FlexItem right={0}>

@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const ListContainer = styled.div`
-  padding 25px;
-  width: 500px;
+  padding 45px 45px 25px 25px;
+  width: 350px;
 `;
 
 const StyledDropdownList = styled.ul`

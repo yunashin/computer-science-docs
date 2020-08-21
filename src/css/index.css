@@ -167,7 +167,7 @@ span code {
   color: #B8606E;
   font-family: Arial Narrow;
   font-size: 48px;
-  padding: 15px 15px 0px 15px;
+  padding: 15px 15px 0px 0px;
 }
 #page-content h2 {
   border-bottom-color: #828282;
@@ -199,11 +199,9 @@ span code {
 }
 #page-content li {
   line-height: 1.5;
-  padding: 10px;
 }
 #page-content p {
   line-height: 1.5;
-  padding: 8px;
 }
 #page-content pre {
   background-color: #e3e3e3;
