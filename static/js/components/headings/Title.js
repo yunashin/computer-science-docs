@@ -1,15 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
-import { BASE_FONT_COLOR } from "../constants/Styles";
+import { LILAC } from "../constants/Styles";
 
 const H1 = styled.h1`
-  color: ${BASE_FONT_COLOR};
-  font-size: 40px;
+  color: ${LILAC};
+  font-family: Arial Narrow;
+  margin: 15px 10px 10px 10px;
 `;
 
 const Title = ({ children }) => {
-  return <H1>{children}</H1>;
+  return (
+    <H1>
+      <a class="lilac" href="/">
+        {children}
+      </a>
+    </H1>
+  );
 };
 
 export default Title;

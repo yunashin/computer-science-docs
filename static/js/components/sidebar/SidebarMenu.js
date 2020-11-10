@@ -2,24 +2,18 @@ import React from "react";
 import styled from "styled-components";
 
 import SidebarListItem from "./SidebarListItem";
+import DropdownList from "../lists/DropdownList/DropdownList";
 import { SidebarContent } from "../constants/SidebarContent";
 
 const SidebarContainer = styled.div`
-  height: 100%;
-  position: absolute;
-  width: 200px;
-`;
-
-const List = styled.ul`
-  list-style: none;
-  margin-block-start: 0px;
-  padding-inline-start: 20px;
+  align-items: center;
+  justify-content: center;
 `;
 
 const SidebarMenu = ({ currentPageIndex, selectPageIndex }) => {
   return (
     <SidebarContainer>
-      <List>
+      <DropdownList>
         {SidebarContent.map((page) => (
           <SidebarListItem
             key={page.title}
@@ -28,7 +22,7 @@ const SidebarMenu = ({ currentPageIndex, selectPageIndex }) => {
             selectPageIndex={selectPageIndex}
           />
         ))}
-      </List>
+      </DropdownList>
     </SidebarContainer>
   );
 };

@@ -19,7 +19,7 @@ module.exports = (options) => {
                   {
                     and: [
                       /\/node_modules\//,
-                      { not: [/computer-science-docs\/(?:src|static)\//] },
+                      { not: [/yunaversal-thoughts\/(?:src|static)\//] },
                     ],
                   },
                 ],

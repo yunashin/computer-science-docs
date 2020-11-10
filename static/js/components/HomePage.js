@@ -10,6 +10,8 @@ import {
   getCurrentPageIndex,
   getIsSandboxPage,
 } from "../utils/routingUtils";
+import Flex from "./Flex";
+import FlexItem from "./FlexItem";
 
 const HomePage = ({ location }) => {
   const pathname = location.pathname;
@@ -37,11 +39,15 @@ const HomePage = ({ location }) => {
   return (
     <div>
       <Header />
-      <SidebarMenu
-        currentPageIndex={currentPageIndex}
-        selectPageIndex={selectPageIndex}
-      />
-      {renderPage()}
+      <Flex wrap="nowrap">
+        <FlexItem left={400}>
+          <SidebarMenu
+            currentPageIndex={currentPageIndex}
+            selectPageIndex={selectPageIndex}
+          />
+        </FlexItem>
+        <FlexItem right={0}>{renderPage()}</FlexItem>
+      </Flex>
     </div>
   );
 };
