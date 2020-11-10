@@ -1,4 +1,4 @@
-# yunversal thoughts
+# yunaversal thoughts
 
 Welcome to my yunaverse, a place where knowledge is shared for anyone who wants it. Personal happiness blog and documentation and compiled notes for all I know about Computer Science!
 
