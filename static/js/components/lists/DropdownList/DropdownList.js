@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ListContainer = styled.div`
   padding 45px 45px 25px 25px;
-  width: 350px;
+  width: 200px;
 `;
 
 const StyledDropdownList = styled.ul`

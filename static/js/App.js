@@ -14,7 +14,7 @@ export default class App {
   startRouter() {
     const history = createBrowserHistory();
     render(
-      <Application name="computer-science-docs">
+      <Application name="yunaversal-thoughts">
         <Router history={history}>
           <Routes />
         </Router>

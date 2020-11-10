@@ -10,10 +10,6 @@ const SidebarContainer = styled.div`
   justify-content: center;
 `;
 
-const List = styled.ul`
-  list-style: none;
-`;
-
 const SidebarMenu = ({ currentPageIndex, selectPageIndex }) => {
   return (
     <SidebarContainer>

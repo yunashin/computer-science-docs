@@ -11,8 +11,7 @@ const PageContainer = styled.div`
 const PageWrapper = styled.div`
   background-color: ${BASE_BACKGROUND_COLOR};
   height: auto;
-  margin: auto;
-  max-width: 1000px;
+  margin: 20px 400px 80px 20px;
   z-index: 3;
 `;
 

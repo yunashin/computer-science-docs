@@ -1,5 +1,13 @@
 /* FONT COLORS */
 /* COLORS */
+.lilac {
+  color: #AA60B8 !important;
+}
+
+.wood {
+  color: #B87E60 !important;
+}
+
 .hljs {
   display: block;
   overflow-x: auto;

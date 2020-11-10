@@ -2,10 +2,11 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
-import { HOVER_COLOR, LILAC, INDIGO } from "./constants/Styles";
+import { HOVER_COLOR, INDIGO } from "./constants/Styles";
 import Flex from "./Flex";
 import Button from "./Button";
 import FlexItem from "./FlexItem";
+import Title from "./headings/Title";
 
 const HeaderContainer = styled.div`
   background-color: ${HOVER_COLOR};
@@ -15,12 +16,6 @@ const HeaderContainer = styled.div`
   height: 90px;
   left: 0;
   top: 0;
-  width: 100%;
-`;
-
-const HeaderTitle = styled.h1`
-  color: ${LILAC};
-  font-family: Arial Narrow;
 `;
 
 const SubTitle = styled.h6`
@@ -39,10 +34,8 @@ const Header = () => {
             className="logo"
             src="https://user-images.githubusercontent.com/30121322/90346560-03fcbd00-dff8-11ea-8a28-5b0f183b6670.png"
           />
-          <HeaderTitle>Computer Science Docs</HeaderTitle>
-          <FlexItem alignItems="baseline">
-            {/* <SubTitle>By Yuna Shin</SubTitle> */}
-          </FlexItem>
+          <Title>yunaversal thoughts</Title>
+          <FlexItem alignItems="baseline"></FlexItem>
         </FlexItem>
         <FlexItem right={0}>
           <Button onClick={() => history.push("/sandbox")}>Sandbox</Button>

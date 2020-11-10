@@ -11,7 +11,8 @@ import { SidebarContent } from "../constants/SidebarContent";
 
 const Item = (backgroundColor, isSelected) => styled.li`
   background-color: ${backgroundColor};
-  font-size: 14px;
+  font-family: "Arial", sans-serif !important;
+  font-size: 17px;
   font-weight: ${isSelected ? "bold" : "normal"};
   height: 20px;
   list-style: none;

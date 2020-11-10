@@ -39,8 +39,8 @@ const HomePage = ({ location }) => {
   return (
     <div>
       <Header />
-      <Flex>
-        <FlexItem left={0}>
+      <Flex wrap="nowrap">
+        <FlexItem left={400}>
           <SidebarMenu
             currentPageIndex={currentPageIndex}
             selectPageIndex={selectPageIndex}
