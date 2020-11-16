@@ -2,18 +2,13 @@ import React, { useState } from "react";
 import { withRouter } from "react-router";
 import styled from "styled-components";
 
-import {
-  LIGHT_PINK,
-  BASE_BACKGROUND_COLOR,
-  HOVER_COLOR,
-} from "../constants/Styles";
+import { PINK, BASE_BACKGROUND_COLOR, HOVER_COLOR } from "../constants/Styles";
 import { SidebarContent } from "../constants/SidebarContent";
 
 const Item = (backgroundColor, isSelected) => styled.li`
   background-color: ${backgroundColor};
-  font-family: "Arial", sans-serif !important;
+  font-family: ${isSelected ? "Montserrat Black" : "Montserrat Medium"};
   font-size: 17px;
-  font-weight: ${isSelected ? "bold" : "normal"};
   height: 20px;
   list-style: none;
   margin: auto;
@@ -23,7 +18,7 @@ const Item = (backgroundColor, isSelected) => styled.li`
 `;
 
 const getBackgroundColor = (isSelected, isHoveredOver) => {
-  if (isSelected) return LIGHT_PINK;
+  if (isSelected) return PINK;
   if (isHoveredOver) return HOVER_COLOR;
   return BASE_BACKGROUND_COLOR;
 };

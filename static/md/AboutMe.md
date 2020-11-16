@@ -7,11 +7,12 @@ Hi, I'm Yuna! 💭🤪<br> <br>
 Here's a little about me: <br>
 
 ✿ My birth date is 9/12/97 (23 years old #virgoszn ♍️) <br>
-✿ I'm a Korean American from Rockland County, NY and went to Columbia University 🗽 <br>
-✿ I'm a Remote Software Engineer 💻 🏡 <br>
+✿ I'm a Korean American from Rockland County, NY <br>
+✿ I graduated from Columbia University in 2019 🗽 <br>
+✿ I'm a Remote Software Engineer at HubSpot 💻 🏡 <br>
 ✿ I'm obsessed with astrology, personality tests, languages, chakras, and tarot cards🔮 <br>
 ✿ I play the violin, piano, guitar, and ukelele 🎻🎹🎸🎶 <br>
-✿ I enjoy arranging and composing music in my spare time 🎼 <br>
+✿ I enjoy arranging, composing, and producing music in my spare time 🎼 <br>
 ✿ I love creative writing and poetry ✍️ <br>
 ✿ I love traveling, linguistics, psychology, and anthropology - I've been to 21 countries so far and hope to see the rest! 🌍
 

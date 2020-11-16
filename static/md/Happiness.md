@@ -2,13 +2,13 @@
 
 The age old question: **What makes people happy?** 🤔
 
-Many of us have been taught the **<a class="wood" href="https://en.wikipedia.org/wiki/Golden_Rule">Golden Rule: Do unto others as you would have done unto yourself.</a>**
+Many of us have been taught the **<a class="gold" href="https://en.wikipedia.org/wiki/Golden_Rule">Golden Rule: Do unto others as you would have done unto yourself.</a>**
 
 🔥 **Hot Take**: I think this belief hurts people and here's why:
 
 ## Observations
 
-_**Note:**_ I'll be referring to selfishness in a two-fold manner: **positive selfishness** (love) and **negative selfishness** (worry).
+_**Note:**_ I'll be referring to selfishness in a two-fold manner: **positive selfishness** (love/excitement) and **negative selfishness** (fear/worry).
 
 <!-- prettier-ignore -->
 - I was raised in a **Korean Christian (Presbyterian) household** and was therefore taught as a child to believe in God, share "His" message, spread love, and **feel extreme shame for committing "sins"** because I'd go to hell if I ever committed any of them.
@@ -20,7 +20,7 @@ _**Note:**_ I'll be referring to selfishness in a two-fold manner: **positive se
 - I get mad when people don't **believe or respect me or my loved ones**.
 
 - Just because I attended Columbia like my dad, does not mean that's why I got in. I know plenty of people who have alumni parents who did not get in. **We are not rich and have never donated to Columbia** - my family is privileged to be a part of the upper middle class and **I've received a little over $60,000/year in financial aid and am still working on paying off my student loans**.
-    - I believe that **all schools should teach the same things** so that there's no longer a stigma about "how good or smart" people can be.
+    - I believe that **all schools should teach the same things** so that there's no longer a need to compare "how good or smart" people can be.
 
 - **I'm privileged for being able to travel a lot and meet many diverse people** because my friends are really good at finding the cheapest flights, and my parents didn't want to prevent me from seeing the world despite the financial burden it was for them.
 
@@ -50,7 +50,9 @@ _**Note:**_ I'll be referring to selfishness in a two-fold manner: **positive se
 
 - **Disagreement or inability to respect others' beliefs often breaks or damages relationships**.
 
-- The more honest I am, the **less ashamed we feel about pooping** and I've been extremely gassy and constipated lately. Thank you, <a href="https://en.wikipedia.org/wiki/Everyone_Poops">Everyone Poops</a> 😂
+- I get **cold and shaky** when I feel unloved and uncertain.
+
+- The more honest I am, the **less ashamed we feel about pooping** and I've been extremely gassy and constipated lately. Thank you, <a href="https://en.wikipedia.org/wiki/Everyone_Poops">Everyone Poops</a>! 😂
 
 ## Conclusions
 
@@ -62,16 +64,57 @@ _**Note:**_ I'll be referring to selfishness in a two-fold manner: **positive se
 
 - People have always tried their best to believe in God and save lives but have been **miscommunicating** up until I realized I could communicate love. I told my loved ones to only **tell people they trust with love, patience, and kindness**, and people continued to share that way, continually making the world a slightly better one than the day before.
 
-- **Uncertainty and doubt manifest in worry or fear**, which is equally contagious as love, laughter, and sneezing, but **kills people**.
+- **Uncertainty and doubt manifest in worry, fear, or over-protectiveness**, which is well-intentioned and equally contagious as love, laughter, and sneezing, but **hurts and kills people**.
 
 - People are therefore **innately empathetic** and only **become dangerous when surrounded or taught by people who dwell on the uncertainty** of why we all feel the same and what else is out there.
 
 - Therefore, **believing in a loving God gives us comfort and confidence in the decisions that we make** because it allows us to believe that everything we do is okay, so long as we can recognize and acknowledge our mistakes.
 
-- I do not believe I am God - I believe **everyone's honest voices are God's voice speaking through us**, and **I view myself as a "normal" girl who never wants to grow up** and simply see a happy, loving world.
+- I do not believe I am God - I choose to believe in a female, loving God personally, I respect others' beliefs, and I believe **everyone tells the truth** - I just didn't know that when people lie, they really just want more love. I view myself as a **"normal" girl who never wants to grow up** and I simply want to see a happy, loving world without all the attention on me.
 
 - People who believe in a loving God all are **equally smart and capable of learning more** about who we are, what our purpose is, and why we are here. I don't have all the answers and I don't think any one person does - we learn when we honestly share our equally fascinating experiences with people we trust.
 
-- The more we **do things together** for the purpose of love, the happier the world deservingly becomes.
+- The more people **do things together optimistically**, the happier the world deservingly becomes.
 
-- We deserve to be proud when we choose to love, but I think **we should choose to love everyone equally so that wars can end once and for all**.
+- I deserve to be proud when I choose to love, and I think **we should choose to love everyone equally so that wars and unhealthy comparisons can end once and for all**.
+
+- I believe that since we did not have this knowledge up until now, **everyone who has passed away has been saved and protected** because not knowing the truth is not a crime, and everyone's best is always enough for me.
+
+- I believe now that we have this knowledge, we must patiently give one another time to wash away guilt at everyone's individual pace, and learn to be more thankful and apologetic to everyone. We are all rightfully confused and hurting, but we can always do better and **all feelings are meant to be felt and shared together**.
+
+- I've noticed that if I offer enough love, honesty, and empathy for those who hurt, I am always amazed at how they repay me. This is why it is so **important to have courage to ask for help**.
+
+- Just because people have done things a certain way for a long time does not make them "right". **Trusting others is the only way I can trust myself.**
+
+- I'm sorry for the way I taught people love, **I'll feel proud and happy once everyone else feels that way**, and I can take care of myself until that day comes.
+
+**TL;DR** Treat others the way they ask to be treated. Hell doesn't exist, there is so much more to learn, we are all amazing and cool people who deserve to be proud, and we all can choose to stay in this world and try harder to make one another proud. Teehee!
+
+## So what now?
+
+I know how confused, frustrated, and worried we all feel whether we show it or not. The best thing to do in my opinion is to stop working so hard, practice self-love, and recognize who is helping and who is hurting.
+
+### Ways I know to practice self-love
+
+- Do whatever makes you happy without hurting or worrying about others
+- Breathe slowly and stay calm when frustrated with others
+- Stop worrying about and asking for money because it divides people
+- Take warm showers and baths often (you don't have to get your hair wet if you don't want to)
+- Spend more time outside and get that natural vitamin D!
+- Speak honestly with the people who support you
+- Take care of your skin (face masks, moisturizers, anti-aging creams, under-eye creams, etc.)
+- Listen to, sing along to, and dance to all the happy, guilty pleasure songs that make us feel good about ourselves (Spotify has a "Songs to Sing in the Shower" playlist that I love)
+- Clean up any clutter around your home (a cluttered space reflects a cluttered mind!)
+- Watch _Queer Eye_ and _The Mind Explained_ on Netflix
+- Sing and dance to your favorite songs with your friends or family
+- Meditate and forgive yourself for hurting others
+- Weed, shrooms, and acid allow us to view the world in fascinatingly different ways, and only help if you think they'll help and if you're in a safe, loving environment
+- Do everything that makes you feel good in moderation - you can always balance selfishness by helping others and accepting their help
+- Eat foods with different colors - spices can also help keep you warm
+- Treat everyone like a precious child instead of avoiding or criticizing them
+- Use [chakra tests](https://www.eclecticenergies.com/chakras/chakratest) to figure out what you need to work on
+- Exercise your brain by thinking of ways to share love
+- Balance colors in your diet and environment
+- Push yourself to help others more because only you can make your own choices and decisions
+- Learn to laugh at yourself by acting silly, optimistic, and funny
+- Practice meditating with yoga (S/O to my boss, Will, who showed me [Yoga with Adriene](https://www.youtube.com/user/yogawithadriene) on YouTube)

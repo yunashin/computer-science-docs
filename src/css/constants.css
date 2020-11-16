@@ -1,11 +1,75 @@
-/* FONT COLORS */
-/* COLORS */
-.lilac {
-  color: #AA60B8 !important;
+/* THEME COLORS */
+.base-font-color {
+  color: #4d4d4d !important;
 }
 
-.wood {
-  color: #B87E60 !important;
+.hover-color {
+  color: #fadffa !important;
+}
+
+/* AURA COLORS */
+.red {
+  color: #d01f1f;
+}
+
+.orange {
+  color: #d78552;
+}
+
+.yellow {
+  color: #f2e122;
+}
+
+.green {
+  color: #4fc144;
+}
+
+.blue {
+  color: #2474d7;
+}
+
+.indigo {
+  color: #5833dc;
+}
+
+.violet {
+  color: #980ad0;
+}
+
+.white {
+  white: #ffffff;
+}
+
+.gold {
+  color: #c7a20d;
+}
+
+.magenta {
+  color: #b30bad !important;
+}
+
+.turquoise {
+  color: #39d2cf;
+}
+
+.silver {
+  color: #968d87;
+}
+
+.pink {
+  color: #f2c7eb;
+}
+
+.brown {
+  color: #712518;
+}
+
+.gray {
+  color: #828282;
+}
+
+.black {
+  color: #000000;
 }
 
 /*# sourceMappingURL=constants.css.map */
