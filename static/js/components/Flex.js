@@ -49,7 +49,7 @@ Flex.propTypes = {
     "stretch",
     "baseline",
   ]),
-  children: PropTypes.array,
+  children: PropTypes.any,
   direction: PropTypes.oneOf([
     "column",
     "column-reverse",

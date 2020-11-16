@@ -2,7 +2,9 @@
 
 **[CSS](https://www.w3.org/Style/CSS/Overview.en.html)** (Cascading Style Sheets) is a **stylesheet language**. CSS files use the `.css` extension and are used to style HTML elements.
 
-You can also edit CSS properties in HTML and JavaScript files. Note that in JavaScript, we use `className` instead of `class`.
+You can also edit CSS properties in HTML and JavaScript files.
+
+**Note**: In JavaScript, we use `className` instead of `class`.
 
 <div class="flex">
 

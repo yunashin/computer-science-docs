@@ -18,13 +18,13 @@ To see live style changes to your `static/sass/index.sass`, type:
 sass --watch static/sass:src/css
 ```
 
+Running this command will automatically convert your Sass into CSS, outputting to `src/css/index.css` in real time.
+
 To build the app for others to see your changes (production mode), type:
 
 ```
-npm build
+npm run-script build
 ```
-
-in order to convert your Sass into CSS, outputting to `src/css/index.css` in real time.
 
 ## Resources
 

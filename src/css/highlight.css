@@ -1,30 +1,111 @@
-/* FONT COLORS */
-/* COLORS */
-.lilac {
-  color: #AA60B8 !important;
+/* THEME COLORS */
+.base-font-color {
+  color: #4d4d4d !important;
 }
 
-.wood {
-  color: #B87E60 !important;
+.hover-color {
+  color: #fadffa !important;
+}
+
+/* AURA COLORS */
+.red {
+  color: #d01f1f;
+}
+
+.orange {
+  color: #d78552;
+}
+
+.yellow {
+  color: #f2e122;
+}
+
+.green {
+  color: #4fc144;
+}
+
+.blue {
+  color: #2474d7;
+}
+
+.indigo {
+  color: #5833dc;
+}
+
+.violet {
+  color: #980ad0;
+}
+
+.white {
+  white: #ffffff;
+}
+
+.gold {
+  color: #c7a20d;
+}
+
+.magenta {
+  color: #b30bad !important;
+}
+
+.turquoise {
+  color: #39d2cf;
+}
+
+.silver {
+  color: #968d87;
+}
+
+.pink {
+  color: #f2c7eb;
+}
+
+.brown {
+  color: #712518;
+}
+
+.gray {
+  color: #828282;
+}
+
+.black {
+  color: #000000;
+}
+
+.color-div {
+  color: #b95b6b;
+}
+
+.color-span {
+  color: #54b390;
+}
+
+.output-box-div {
+  color: white;
+  background-color: #7e60b8;
+  height: 75px;
+  margin: 10px;
+  text-align: center;
+  width: 100px;
 }
 
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  color: #4d4d4d;
+  color: #484848;
 }
 
 .hljs-comment,
 .hljs-quote {
-  color: #B87E60;
+  color: #8ed0ab;
   font-style: italic;
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-subst {
-  color: #606EB8;
+  color: #a048c6;
 }
 
 .hljs-number,
@@ -32,18 +113,18 @@
 .hljs-variable,
 .hljs-template-variable,
 .hljs-tag .hljs-attr {
-  color: #7AA293;
+  color: #39d2cf;
 }
 
 .hljs-string,
 .hljs-doctag {
-  color: #B8606E;
+  color: #f2bd7b;
 }
 
 .hljs-title,
 .hljs-section,
 .hljs-selector-id {
-  color: #684366;
+  color: #a048c6;
   font-weight: bold;
 }
 
@@ -54,43 +135,43 @@
 .hljs-type,
 .hljs-function,
 .hljs-class .hljs-title {
-  color: #AA60B8;
+  color: #b30bad;
   font-weight: bold;
 }
 
 .hljs-tag,
 .hljs-name,
 .hljs-attribute {
-  color: #B8606E;
+  color: #ffa3a3;
   font-weight: normal;
 }
 
 .hljs-regexp,
 .hljs-link {
-  color: #7AA293;
+  color: #8ab1ed;
 }
 
 .hljs-symbol,
 .hljs-bullet {
-  color: #B8606E;
+  color: #4fc144;
 }
 
 .hljs-built_in,
 .hljs-builtin-name {
-  color: #606EB8;
+  color: #2474d7;
 }
 
 .hljs-meta {
-  color: #B87E60;
+  color: #e89191;
   font-weight: bold;
 }
 
 .hljs-deletion {
-  background: #AA60B8;
+  background: #d01f1f;
 }
 
 .hljs-addition {
-  background: #7E60B8;
+  background: #4fc144;
 }
 
 .hljs-emphasis {
